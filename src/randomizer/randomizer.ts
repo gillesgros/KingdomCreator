@@ -25,8 +25,8 @@ import {getRandomInt, getRandomInts, selectRandomN} from "../utils/rand";
 import { Boon } from "../dominion/boon";
 
 const SETS_WITH_DUPLICATES: {[index: string]: string} = {
-  'baseset2': 'baseset',
-  'intrigue2': 'intrigue'
+  'baseset': 'baseset2',
+  'intrigue': 'intrigue2'
 };
 const MAX_RETRIES = 3;
 const NUM_CARDS_IN_KINGDOM = 10;
@@ -53,13 +53,13 @@ export class Randomizer {
     const boons = this.getRandomBoons(supply, []);
     const metadata = this.getMetadata(randomizerOptions.setIds);
     return new Kingdom(
-      Date.now(),
-      supply,
-      addons.events,
-      addons.landmarks,
-      addons.projects,
-      boons,
-      metadata);
+                   Date.now(),          /* id: number,  */
+                   supply,              /* supply: Supply, */
+                   addons.events,       /* events: Event[], */
+                   addons.landmarks,    /* landmarks: Landmark[], */
+                   addons.projects,     /* projects: Project[], */
+                   boons,               /* boons: Boon[], */
+                   metadata);           /* metadata: Metadata */
   }
 
   static createSupplySafe(randomizerOptions: RandomizerOptions): Supply | null {

@@ -65,14 +65,13 @@ export function deserializeKingdom(serializedKingdom: string): Kingdom | null {
   const supply = new Supply(supplyCards, baneCard, Replacements.empty());
 
   return new Kingdom(
-    Date.now(),
-    supply,
-    events,
-    landmarks,
-    projects,
-    boons,
-    deserializeMetadata(serializedKingdom)
-  );
+               Date.now(),                                /* id: number,  */
+               supply,                                    /* supply: Supply, */
+               events,                                    /* events: Event[], */
+               landmarks,                                 /* landmarks: Landmark[], */
+               projects,                                  /* projects: Project[], */
+               boons,                                     /* boons: Boon[], */
+               deserializeMetadata(serializedKingdom));   /* metadata: Metadata */
 }
 
 function serializeCards<T extends Card>(identifier: string, cards: T[]): string {

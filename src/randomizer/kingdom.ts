@@ -17,7 +17,13 @@ export class Kingdom {
 
   static empty() {
     return new Kingdom(
-      0, Supply.empty(), [], [], [], [], new Metadata(false, false));
+                    0,                /* id: number,  */
+                    Supply.empty(),   /* supply: Supply, */
+                    [],               /* events: Event[], */
+                    [],               /* landmarks: Landmark[], */
+                    [],               /* projects: Project[], */
+                    [],               /* boons: Boon[], */
+                    new Metadata(false, false));   /* metadata: Metadata */
   }
 }
 

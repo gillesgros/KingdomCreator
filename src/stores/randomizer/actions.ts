@@ -9,7 +9,7 @@ import {
 import { EventTracker } from "../../analytics/event-tracker";
 import { EventType } from "../../analytics/event-tracker";
 import { State } from "./randomizer-store";
-import {deserializeKingdom} from "../../randomizer/serializer";
+import { deserializeKingdom } from "../../randomizer/serializer";
 import { ActionContext } from "vuex";
 import { CardType } from "../../dominion/card-type";
 import { RandomizerOptionsBuilder } from "../../randomizer/randomizer-options";
@@ -30,6 +30,7 @@ interface Context extends ActionContext<State, any> {}
 
 export const actions = {
   LOAD_INITIAL_KINGDOM(context: Context) {
+
     const kingdomFromUrl = deserializeKingdom(location.search);
     if (kingdomFromUrl) {
       // Use the kingdom as-is if it contains 10 supply cards.
@@ -50,8 +51,13 @@ export const actions = {
       if (supply) {
         EventTracker.trackEvent(EventType.LOAD_PARTIAL_KINGDOM_FROM_URL);
         const kingdom = new Kingdom(
-            Date.now(), supply, kingdomFromUrl.events, kingdomFromUrl.landmarks,
-            kingdomFromUrl.projects, kingdomFromUrl.boons, kingdomFromUrl.metadata);
+            Date.now(),                     /* id: number,  */
+            supply,                         /* supply: Supply, */
+            kingdomFromUrl.events,          /* events: Event[], */
+            kingdomFromUrl.landmarks,       /* landmarks: Landmark[], */
+            kingdomFromUrl.projects,        /* projects: Project[], */
+            kingdomFromUrl.boons,           /* boons: Boon[], */
+            kingdomFromUrl.metadata);       /* metadata: Metadata */
         context.commit(CLEAR_SELECTION);
         context.commit(UPDATE_KINGDOM, kingdom);
         return;
@@ -92,8 +98,14 @@ export const actions = {
     const newBoons = randomizeSelectedBoons(context, newSupply);
         
     const kingdom = new Kingdom(
-      context.state.kingdom.id, newSupply, newEvents, newLandmarks, newProjects,
-      newBoons, context.state.kingdom.metadata);
+            context.state.kingdom.id,             /* id: number,  */
+            newSupply,                            /* supply: Supply, */
+            newEvents,                            /* events: Event[], */
+            newLandmarks,                         /* landmarks: Landmark[], */
+            newProjects,                          /* projects: Project[], */
+            newBoons,                             /* boons: Boon[], */
+            context.state.kingdom.metadata);      /* metadata: Metadata */
+
     context.commit(CLEAR_SELECTION);
     context.commit(UPDATE_KINGDOM, kingdom);
   },
@@ -158,13 +170,18 @@ export const actions = {
         .setRequireTrashing(randomizerSettings.requireTrashing)
         .setRequireReactionIfAttacks(randomizerSettings.requireReaction)
     }
-
+    
     const supply = Randomizer.createSupplySafe(optionsBuilder.build());
     if (supply) {
       const oldKingdom = context.state.kingdom;
       const kingdom = new Kingdom(
-        oldKingdom.id, supply, oldKingdom.events, oldKingdom.landmarks, oldKingdom.projects,
-        randomizeSelectedBoons(context, supply), oldKingdom.metadata);
+              oldKingdom.id,                                  /* id: number,  */
+              supply,                                         /* supply: Supply, */
+              oldKingdom.events,                              /* events: Event[], */
+              oldKingdom.landmarks,                           /* landmarks: Landmark[], */
+              oldKingdom.projects,                            /* projects: Project[], */
+              randomizeSelectedBoons(context, supply, ),        /* boons: Boon[], */
+              oldKingdom.metadata);                           /* metadata: Metadata */
       context.commit(CLEAR_SELECTION);
       context.commit(UPDATE_KINGDOM, kingdom);
       EventTracker.trackEvent(EventType.RANDOMIZE_SINGLE);
@@ -176,13 +193,13 @@ export const actions = {
   RANDOMIZE_UNDEFINED_ADDON(context: Context) {
     const addons = randomizeUndefinedAddon(context).concat(getAddons(context));        
     const kingdom = new Kingdom(
-      context.state.kingdom.id,
-      context.state.kingdom.supply,
-      Cards.getAllEvents(addons),
-      Cards.getAllLandmarks(addons),
-      Cards.getAllProjects(addons),
-      context.state.kingdom.boons,
-      context.state.kingdom.metadata);
+            context.state.kingdom.id,                  /* id: number,  */
+            context.state.kingdom.supply,              /* supply: Supply, */
+            Cards.getAllEvents(addons),                /* events: Event[], */
+            Cards.getAllLandmarks(addons),             /* landmarks: Landmark[], */
+            Cards.getAllProjects(addons),              /* projects: Project[], */
+            context.state.kingdom.boons,               /* boons: Boon[], */
+            context.state.kingdom.metadata);           /* metadata: Metadata */
     context.commit(UPDATE_KINGDOM, kingdom);
   },
 
@@ -197,10 +214,11 @@ export const actions = {
     }
     const selection = context.state.selection;
     const card = DominionSets.getCardById(id);
+
     if (card instanceof SupplyCard) {
-      context.commit(UPDATE_SELECTION, {
-        selectedSupplyIds: selection.selectedSupplyIds.concat([id])
-      } as SelectionParams);
+        context.commit(UPDATE_SELECTION, {
+              selectedSupplyIds: selection.selectedSupplyIds.concat([id])
+              } as SelectionParams);
     } else if (card instanceof Boon) {
       context.commit(UPDATE_SELECTION, {
         selectedBoonIds: selection.selectedBoonIds.concat([id])
