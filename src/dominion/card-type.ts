@@ -12,6 +12,7 @@ export enum CardType {
   REACTION = "isReaction",
   RESERVE = "isReserve",
   TRASHING = "isTrashing",
+  TRAVELLER = "isTraveller",
   TREASURE = "isTreasure",
   VICTORY = "isVictory",
 }

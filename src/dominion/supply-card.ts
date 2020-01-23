@@ -3,6 +3,7 @@ import {CardType} from "./card-type"
 import {Cost} from "./cost"
 import {SetId} from "./set-id"
 
+
 export class SupplyCard implements Card {
   constructor(
     readonly id: string,
@@ -23,6 +24,7 @@ export class SupplyCard implements Card {
     readonly isReaction: boolean,
     readonly isReserve: boolean,
     readonly isTrashing: boolean,
+    readonly isTraveller: boolean,
     readonly isTreasure: boolean,
     readonly isVictory: boolean) {
   }
@@ -55,6 +57,8 @@ export class SupplyCard implements Card {
         return this.isReserve;
       case CardType.TRASHING:
         return this.isTrashing;
+      case CardType.TRAVELLER:
+        return this.isTraveller;
       case CardType.TREASURE:
         return this.isTreasure;
       case CardType.VICTORY:
@@ -84,6 +88,7 @@ export class SupplyCard implements Card {
       json["isReaction"] || false,
       json["isReserve"] || false,
       json["isTrashing"] || false,
+      json["isTraveller"] || false,
       json["isTreasure"] || false,
       json["isVictory"] || false)
   }
