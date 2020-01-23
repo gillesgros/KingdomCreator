@@ -16,9 +16,9 @@
 </template>
 
 <script lang="ts">
-import { UPDATE_SELECTED_SET } from "../stores/sets-store-mutation-types";
+import { UPDATE_SELECTED_SET } from "../stores/pages-store-mutation-types";
 import { DominionSets } from "../dominion/dominion-sets";
-import { State } from "../stores/sets-store";
+import { State } from "../stores/pages-store";
 import { SetId } from "../dominion/set-id";
 import { Vue, Component } from "vue-property-decorator";
 

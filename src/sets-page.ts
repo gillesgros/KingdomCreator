@@ -3,8 +3,8 @@ import PageComponent, { MenuItemType } from "./components/page.vue";
 import PresetKingdomComponent from "./components/preset-kingdom.vue";
 import SetsSidebarComponent from "./components/sets-sidebar.vue";
 import { DominionKingdoms } from "./dominion/dominion-kingdoms";
-import { State, store } from "./stores/sets-store";
-import { initializeWindowListener } from "./setup";
+import { State, store } from "./stores/pages-store";
+import { initializeWindowListener } from "./stores/setup";
 
 const SUBTITLE = "Recommended Sets of 10";
 

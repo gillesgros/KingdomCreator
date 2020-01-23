@@ -3,8 +3,8 @@ import EnlargeButtonComponent from "./components/enlarge-button.vue";
 import PageComponent, { MenuItemType } from "./components/page.vue";
 import RandomizerComponent from "./components/randomizer.vue";
 import ReplaceSupplyCardModalComponent from "./components/replace-supply-card-modal.vue"
-import { store } from "./stores/index-store";
-import { initializeWindowListener } from "./setup";
+import { store } from "./stores/pages-store";
+import { initializeWindowListener } from "./stores/setup";
 
 const SUBTITLE = "Dominion card picker for desktop and mobile"
 
@@ -29,6 +29,6 @@ new Vue({
     "page-component": PageComponent,
     "randomizer-component": RandomizerComponent,
     "replace-supply-card-modal-component": ReplaceSupplyCardModalComponent,
-    "enlarge-button-component": EnlargeButtonComponent,
-  },
+    "enlarge-button-component": EnlargeButtonComponent
+  }
 });
