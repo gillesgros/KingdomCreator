@@ -16,4 +16,21 @@ export enum SetId {
   PROSPERITY = "prosperity",
   RENAISSANCE = "renaissance",
   SEASIDE = "seaside",
-}
+};
+
+export const IgnoreSetIdKingdoms =
+    new Set([ SetId.PROMOS,
+              SetId.GUILDSCONUCOPIA
+]);
+
+export const IgnoreSetIdRandomize =
+    new Set([ 
+              SetId.GUILDSCONUCOPIA
+]);
+
+export const IgnoreSetIdSet = IgnoreSetIdRandomize;
+
+export const IgnoreSetIdRules =
+    new Set([ SetId.PROMOS ]);
+
+

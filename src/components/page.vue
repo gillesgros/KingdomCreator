@@ -51,9 +51,16 @@
 <script lang="ts">
 import { Getter } from "vuex-class";
 import { Vue, Component, Prop } from "vue-property-decorator";
+import { Vue2Storage } from "vue2-storage";
+
+Vue.use(Vue2Storage, {
+  prefix: 'KingdomCreator_',
+  driver: 'local'
+});
 
 export enum MenuItemType {
   RANDOMIZER,
+  KINGDOMS,
   SETS,
   RULES,
 }
@@ -65,7 +72,8 @@ class MenuItem {
 
 const MENU_ITEMS = [
   new MenuItem(MenuItemType.RANDOMIZER, "Randomizer", "/index.html"),
-  new MenuItem(MenuItemType.SETS, "Recommended Kingdoms", "/sets.html"),
+  new MenuItem(MenuItemType.KINGDOMS, "Recommended Kingdoms", "/kingdoms.html"),
+  new MenuItem(MenuItemType.SETS, "Sets", "/sets.html"),
   new MenuItem(MenuItemType.RULES, "Rules", "/rules.html"),
 ];
 

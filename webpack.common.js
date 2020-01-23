@@ -16,6 +16,7 @@ module.exports = function(isProduction) {
     entry: {
       index: ["./src/index-page.ts", "./styles/index.styl"],
       sets: ["./src/sets-page.ts", "./styles/sets.styl"],
+      kingdoms: ["./src/kingdoms-page.ts", "./styles/kingdoms.styl"],
       rules: ["./src/rules-page.ts", "./styles/rules.styl"],
     },
     output: {
@@ -70,6 +71,12 @@ module.exports = function(isProduction) {
         template: "./views/index.pug",
         chunks: ["index"],
         filename: "index.html",
+        isProduction: isProduction,
+      }),
+      new HtmlWebpackPlugin({
+        template: "./views/kingdoms.pug",
+        chunks: ["kingdoms"],
+        filename: "kingdoms.html",
         isProduction: isProduction,
       }),
       new HtmlWebpackPlugin({
