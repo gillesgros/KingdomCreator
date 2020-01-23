@@ -82,7 +82,6 @@ cards:
     isReaction: false
     isReserve: false
     isTrashing: false
-    isTraveller: false
     isTreasure: true
     isVictory: false
 
@@ -99,6 +98,84 @@ cards:
     isReaction: false
     isReserve: false
     isTrashing: false
-    isTraveller: false
     isTreasure: false
     isVictory: false
+
+  - name: Captain
+    cost:
+      treasure: 6
+      potion: 0
+    isAction: true
+    isActionSupplier: false
+    isAttack: false
+    isBuySupplier: false
+    isDuration: true
+    isDrawer: false
+    isReaction: false
+    isReserve: false
+    isTrashing: false
+    isTreasure: false
+    isVictory: false
+
+  - name: Dismantle
+    cost:
+      treasure: 4
+      potion: 0
+    isAction: true
+    isActionSupplier: false
+    isAttack: false
+    isBuySupplier: false
+    isDuration: false
+    isDrawer: false
+    isReaction: false
+    isReserve: false
+    isTrashing: true
+    isTreasure: false
+    isVictory: false
+
+
+  - name: Church
+    cost:
+      treasure: 3
+      potion: 0
+    isAction: true
+    isActionSupplier: true
+    isAttack: false
+    isBuySupplier: false
+    isDuration: true
+    isDrawer: true
+    isReaction: false
+    isReserve: false
+    isTrashing: false
+    isTraveller: false
+    isVictory: false
+
+
+  - name: Sauna / Avanto
+    cost:
+      treasure: 4
+      potion: 0
+    isAction: true
+    isActionSupplier: true
+    isAttack: false
+    isBuySupplier: false
+    isDuration: false
+    isDrawer: true
+    isReaction: false
+    isReserve: false
+    isTrashing: false
+    isTraveller: false
+    isVictory: false
+
+events:
+  - name: Summon
+    cost:
+      treasure: 5
+      potion: 0
+    isActionSupplier: false
+    isBuySupplier: false
+    isDrawer: false
+    isReaction: false
+    isTrashing: false
+
+
