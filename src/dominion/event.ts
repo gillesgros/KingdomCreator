@@ -17,6 +17,20 @@ export class Event implements Addon {
   }
 
   public static fromJson(json: any) {
+   if ( typeof json["cost"] === 'undefined' ) {
+      return new Event(
+        json["id"],
+        json["shortId"],
+        json["setId"],
+        json["name"],
+        new Cost(0,0,0),
+        json["isActionSupplier"] || false,
+        json["isBuySupplier"] || false,
+        json["isDrawer"] || false,
+        json["isReaction"] || false,
+        json["isTrashing"] || false);
+   }
+
     return new Event(
       json["id"],
       json["shortId"],
