@@ -12,7 +12,7 @@
 import { Card } from "../dominion/card";
 import { SupplyCard } from "../dominion/supply-card";
 import { Vue, Component, Prop } from "vue-property-decorator";
-import { getCardImageUrl } from "../utils/resources";
+import { getCardImageUrlbyDir } from "../utils/resources";
 import { DominionSets } from "../dominion/dominion-sets";
 import StaticCardComponent from "./static-card.vue";
 import CardSetDescriptionComponent from "./card-set-description.vue";
@@ -34,7 +34,7 @@ export default class StaticCardWithSetComponent extends Vue {
   }
 
   get cardImageUrl() {
-    return getCardImageUrl(this.card.id);
+    return getCardImageUrlbyDir(this.card.id);
   }
 
   get set() {

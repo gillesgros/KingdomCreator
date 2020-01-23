@@ -29,7 +29,7 @@
 import { DominionSets } from "../dominion/dominion-sets";
 import { Vue, Component, Prop, Watch } from "vue-property-decorator";
 import { State } from "vuex-class";
-import { getCardImageUrl } from "../utils/resources";
+import { getCardImageUrlbyDir } from "../utils/resources";
 import { Card } from "../dominion/card";
 import { TweenLite, Sine } from "gsap";
 import { Selection } from "../stores/randomizer/selection";
@@ -94,7 +94,9 @@ export default class FlippingCardComponent extends Vue {
   }
 
   get frontCardImageUrl() {
-    return this.activeCard ? getCardImageUrl(this.activeCard.id) : "";
+    return this.activeCard 
+        ? getCardImageUrlbyDir(this.activeCard.id )
+        : "";
   }
 
   get backCardImageUrl() {
