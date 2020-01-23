@@ -1,5 +1,6 @@
 import {DominionKingdom} from "./dominion-kingdom"
-import {SetId} from "./set-id"
+import {DominionSets} from "./dominion-sets"
+import {SetId, IgnoreSetIdKingdoms} from "./set-id"
 
 interface DominionContentKingdoms {
   kingdoms: any[];
@@ -23,5 +24,21 @@ export class DominionKingdoms {
       sets[setId] = kingdoms.map((json: any) => DominionKingdom.fromJson(json));
     }
     return sets;
+  }
+  
+  public static getAllKingdoms(): DominionKingdom[] {
+    var Kingdoms:DominionKingdom[]= []
+    var setIds = Object.keys(DominionSets.sets)
+						.filter(
+							function(value, index, arr) {
+								return !IgnoreSetIdKingdoms.has((value as SetId));
+							}
+						);
+
+    for (let setId of setIds) {
+		Kingdoms = Kingdoms.concat((DominionKingdoms.kingdoms[setId as SetId] as DominionKingdom[]))
+							.filter((kingdom, index, self) => index === self.findIndex((t) => (t.name === kingdom.name)))
+    }
+    return Kingdoms;
   }
 }

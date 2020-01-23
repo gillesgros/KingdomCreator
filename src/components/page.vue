@@ -10,6 +10,7 @@
         </li>
       </ul>
     </div>
+    <a id="TopofThePage" />
     <div class="page" :class="{'show-condensed-menu': shouldShowCondensedMenu}">
       <header>
         <div class="title-container">
@@ -63,12 +64,12 @@ export enum MenuItemType {
   KINGDOMS,
   SETS,
   RULES,
-}
+};
 
 class MenuItem {
   constructor(readonly type: MenuItemType, readonly title: string, readonly url: string) {
   }
-}
+};
 
 const MENU_ITEMS = [
   new MenuItem(MenuItemType.RANDOMIZER, "Randomizer", "/index.html"),

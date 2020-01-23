@@ -1,10 +1,14 @@
 <template>
   <div>
+  <a :id="kingdom.name" />
     <div class="preset-kingdom_title">
-      <div class="preset-kingdom_title_name">{{kingdom.name}}</div>
-      <div class="preset-kingdom_title_sets" v-for="set in sets" :key="set.setId">
-        <span class="preset-kingdom_set-name" :class="[set.setId]">{{set.name}}</span>
+      <div class="preset-kingdom_title left-top-sign-div">
+        <div class="preset-kingdom_title_name">{{kingdom.name}}</div>
+        <div class="preset-kingdom_title_sets " v-for="set in sets" :key="set.setId">
+          <span class="preset-kingdom_set-name" :class="[set.setId]">{{set.name}}</span>
+        </div>
       </div>
+      <div class="right-top-sign-div"><a href="#TopofThePage">Top</a></div>
     </div>
 
     <div class="preset-kingdom_metadata" v-if="hasMetadata">
@@ -93,17 +97,18 @@ export default class PresetKingdom extends Vue {
   }
   @Prop() readonly kingdom!: DominionKingdom;
   @State(state => state.window.width) windowWidth!: number;
+  @State(state => state.window.isEnlarged) readonly isEnlarged!: boolean;
   
   get sets() {
     return this.kingdom.setIds.map(DominionSets.getSetById);
   }
 
   get numberOfColumnsForSupplyCards() {
-    return this.windowWidth <= FOUR_COLUMN_SUPPLY_CARD_WIDTH ? 4 : 5;
+    return this.isEnlarged ? 2 : this.windowWidth <= FOUR_COLUMN_SUPPLY_CARD_WIDTH ? 4 : 5;
   }
 
   get numberOfColumnsForAddons() {
-    return this.windowWidth <= TWO_COLUMN_ADDON_WIDTH ? 2 : 3;
+    return this.isEnlarged ? 1 : this.windowWidth <= TWO_COLUMN_ADDON_WIDTH ? 2 : 3;
   }
 
   get titleForAddons() {
@@ -146,69 +151,6 @@ export default class PresetKingdom extends Vue {
 </script>
 
 <style>
-
-.preset-kingdom_title {
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 24px 0 12px;
-}
-
-.preset-kingdom_title_name {
-  color: #555;
-  font-size: 36px;
-  margin: 0 12px 0 0;
-}
-
-.preset-kingdom_title_sets {
-  display: flex;
-  flex-direction: row;
-  margin: 2px 0;
-}
- 
-.preset-kingdom_set-name {
-  display: block;
-  background: rgba(220, 220, 220, 0.7);
-  color: #fff;
-  margin-right: 4px;
-  padding: 6px 8px;
-  text-shadow: 1px 1px 4px #fff;
-  font-size: 16px;
-}
-
-.preset-kingdom-copy-button {
-  margin-top: 2px;
-}
-
-.preset-kingdom_metadata {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 10px;
-}
-
-.preset-kingdom_metadata_use-platinums-and-colonies,
-.preset-kingdom_metadata_use-shelters {
-  color: #fff;
-  font-size: 14px;
-  padding: 2px 6px;
-  margin-right: 6px;
-}
-  
-.preset-kingdom_metadata_use-platinums-and-colonies {
-  background: #C8CE0B; /* prosperity-color */
-}
-
-.preset-kingdom_metadata_use-shelters {
-  background: #b1572a; /* darkages-color */
-}
-
-.preset-kingdom__addon-title {
-  color: #555;
-  font-size: 24px;
-  margin: 12px 0 8px 0;
-}  
 
 @media (max-width: 450px) {
   .preset-kingdom_title_name {

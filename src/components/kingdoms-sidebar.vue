@@ -2,7 +2,6 @@
   <div class="sidebar">
     <div class="sidebar-content">
       <div class="sidebar-content-title">Kingdoms</div>
-
       <div class="sets" v-for="set in sets" :key="set.setId">
         <div class="set">
           <label class="checkbox">
@@ -11,7 +10,15 @@
           </label>
         </div>
       </div> <!-- sets {{ set.name }} -->
-      <div class="clear"></div>
+      <br>
+      <div class="sets">
+        <div class="set">
+          <label class="checkbox">
+            <input type="radio" id="selectedKDSet" value="All" v-model="selectedKDSetId" />
+            <span>All recommended sets</span>
+          </label>
+        </div>
+      </div><!-- sets All -->
     </div>
   </div>
 </template>

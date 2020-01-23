@@ -6,6 +6,15 @@
     </div>
     <div v-for="lang in Languages" :key="lang">
       <div class="kingdoms" >
+        <div style="border-top: 1px solid #ccc;">
+          <span> To Filter Sets </span>
+        </div>
+          <div class="preset-set_title">
+            <div class="preset-kingdom_title_sets" v-for="set in sets" :key="set.setId">
+              <span :id="set.setId" v-on:click="setfilter(set.setId)" 
+          class="preset-kingdom_set-name" :class="set.setId">{{set.name}}</span>
+            </div>
+          </div>
         <kingdoms-list-component  :key="RefreshOrderForKingdomList"/>
       </div>
     </div>
@@ -39,7 +48,11 @@ export default class KingdomsMain extends Vue {
   get kingdoms() {
     this.$store.commit(UPDATE_SELECTED_KDSET, this.$storage.get("selectedKDSetId", SetId.BASE_SET));
     const setId = (this.$store.state as State).selectedKDSetId;
-    return DominionKingdoms.kingdoms[setId];
+    if (setId === ("All" as SetId)) {
+      return DominionKingdoms.getAllKingdoms();
+    } else {
+      return DominionKingdoms.kingdoms[setId];
+    }
   }
   
   get sets () {

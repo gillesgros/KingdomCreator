@@ -22,6 +22,7 @@
 
 <script lang="ts">
 import FlippingCardComponent from "./flipping-card.vue";
+import GridLayoutComponent from "./grid-layout.vue";
 import { Addon } from "../dominion/addon";
 import { Vue, Component, Watch } from "vue-property-decorator";
 import { Getter, State } from "vuex-class";
@@ -36,7 +37,11 @@ const NUMBER_OF_ADDONS = 2;
 @Component
 export default class AddonsComponent extends Vue {
   constructor() {
-    super({components: {"flipping-card-component": FlippingCardComponent}});
+    super({
+      components: {
+        "flipping-card-component": FlippingCardComponent,
+        "grid-layout-component": GridLayoutComponent
+      }});
   }
   @State(state => state.randomizer.selection) readonly selection!: Selection;
   @State(state => state.window.isEnlarged) readonly isEnlarged!: boolean;
