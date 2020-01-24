@@ -95,7 +95,7 @@ export default class FlippingCardComponent extends Vue {
 
   get frontCardImageUrl() {
     return this.activeCard 
-        ? getCardImageUrlbyDir(this.activeCard.id )
+        ? getCardImageUrlbyDir(this.activeCard.id , this.$storage.get("Language"))
         : "";
   }
 

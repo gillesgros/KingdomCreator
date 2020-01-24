@@ -22,14 +22,13 @@
 import { Vue, Component } from "vue-property-decorator";
 import GridLayoutComponent, { Shape } from "./grid-layout.vue";
 import RulebookComponent, { Rulebook } from "./rulebook.vue";
-import { SetId } from "../dominion/set-id";
+import { SetId, IgnoreSetIdRules, IgnoreSetIdRulesFR } from "../dominion/set-id";
 import { DominionSets } from "../dominion/dominion-sets";
+import { State as PagesStore} from "../stores/pages-store";
 
-const SETS_TO_IGNORE = new Set([SetId.PROMOS]);
-const RULEBOOK_IDS = 
+const Global_RULEBOOK_IDS = 
   DominionSets
     .getAllSets()
-    .filter(s => !SETS_TO_IGNORE.has(s.setId))
     .map(s => {
       return {
         id: s.setId,
@@ -40,6 +39,7 @@ const RULEBOOK_IDS =
       id: "guildscornucopia",
       name: "Guilds / Cornucopia"
     })
+    .filter(set => !(IgnoreSetIdRules.has(set.id as SetId)))
     .sort((a, b) => {
       return a.id == b.id ? 0 : a.id < b.id ? -1 : 1;
     });
@@ -54,8 +54,21 @@ export default class Rulebooks extends Vue {
       }
     });
   }
-  RULEBOOK_IDS = RULEBOOK_IDS;
   Shape = Shape;
+
+  get RULEBOOK_IDS() {
+  return Global_RULEBOOK_IDS
+		.filter((set) => !(
+			IgnoreSetIdRules.has(set.id as SetId) || 
+			((this.$store.state as PagesStore).selectedLang == ".fr"  
+				? IgnoreSetIdRulesFR.has(set.id as SetId) 
+				: "" ))
+		)
+        .sort((a, b) => {
+      return a.id == b.id ? 0 : a.id < b.id ? -1 : 1;
+    });
+  }
+  
 };
 </script>
 

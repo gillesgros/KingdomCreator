@@ -18,6 +18,9 @@
             <a class="title_link" href="/index.html">Dominion Randomizer</a>
           </h1>
           <h2 class="tagline">{{ subtitle }}</h2>
+            <select v-model="selectedLanguage">
+              <option v-for="locale in locales" v-bind:value="locale.id">{{ locale.name }}</option>
+            </select>
         </div>
         <div class="condensed-menu-button" v-if="isCondensed" @click="handleMenuClick"></div>
         <div class="menu" v-if="!isCondensed">
@@ -29,7 +32,9 @@
           </ul>
         </div>
       </header>
-      <slot></slot>
+      <div v-for="lang in [ selectedLanguage ]" :key="lang">
+        <slot></slot>
+      </div>
       <footer>
         <div class="github-info">
           Source is on <a href="https://github.com/blakevanlan/KingdomCreator">Github</a>.
@@ -53,6 +58,8 @@
 import { Getter } from "vuex-class";
 import { Vue, Component, Prop } from "vue-property-decorator";
 import { Vue2Storage } from "vue2-storage";
+import { UPDATE_SELECTED_LANG } from "../stores/pages-store-mutation-types";
+import { State } from "../stores/pages-store";
 
 Vue.use(Vue2Storage, {
   prefix: 'KingdomCreator_',
@@ -85,6 +92,19 @@ export default class PageComponent extends Vue {
   @Getter("isCondensed") readonly isCondensed!: boolean;
   isCondensedMenuActive = false;
   menuItems = MENU_ITEMS;
+  locales= [
+    {id: '', name: 'English'}, 
+    {id: '.fr', name: 'Francais'}
+  ];
+  beforeMount() {
+    if (this.$storage.has("Language")) {
+      if (!((this.$store.state as State).selectedLang === this.$storage.get("Language")))  {
+       this.$store.commit(UPDATE_SELECTED_LANG, this.$storage.get("Language"));
+      }
+    } else {
+      this.$storage.set("Language", (this.$store.state as State).selectedLang);
+    }
+  }
 
   get shouldShowCondensedMenu() {
     return this.isCondensed && this.isCondensedMenuActive;
@@ -97,5 +117,18 @@ export default class PageComponent extends Vue {
   isMenuItemActive(menuItem: MenuItem) {
     return menuItem.type == this.selectedType;
   }
-}
+
+  get selectedLanguage() {
+  console.log("selectedLanguage= "+ (this.$store.state as State).selectedLang);
+   	return (this.$store.state as State).selectedLang;
+  }
+
+  set selectedLanguage(value: string) {
+  console.log("set lang");
+    this.$storage.set("Language", value);
+    this.$store.commit(UPDATE_SELECTED_LANG, value);
+  }
+  
+};
+
 </script>

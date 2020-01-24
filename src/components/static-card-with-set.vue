@@ -34,7 +34,7 @@ export default class StaticCardWithSetComponent extends Vue {
   }
 
   get cardImageUrl() {
-    return getCardImageUrlbyDir(this.card.id);
+    return getCardImageUrlbyDir(this.card.id, this.$storage.get("Language"));
   }
 
   get set() {

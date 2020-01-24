@@ -30,11 +30,11 @@ export default class RulebookComponent extends Vue {
   @Prop() readonly rulebook!: Rulebook;
 
   get imageUrl() {
-    return getSetImageUrl(this.rulebook.id);
+    return getSetImageUrl(this.rulebook.id, this.$storage.get("Language"));
   }
 
   get rulebookUrl() {
-    return getRulebookUrl(this.rulebook.id);
+    return getRulebookUrl(this.rulebook.id, this.$storage.get("Language"));
   }
 }
 Vue.component("rulebook-component", RulebookComponent);

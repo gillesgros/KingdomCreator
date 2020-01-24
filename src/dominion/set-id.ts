@@ -34,3 +34,12 @@ export const IgnoreSetIdRules =
     new Set([ SetId.PROMOS ]);
 
 
+export const IgnoreSetIdRulesFR =
+    new Set([ SetId.PROMOS,
+              SetId.BASE_SET_2, 
+              SetId.INTRIGUE_2,
+              SetId.GUILDSCONUCOPIA,
+              SetId.RENAISSANCE,
+              SetId.EMPIRES,
+              SetId.NOCTURNE
+]);
