@@ -19,21 +19,23 @@
 import { UPDATE_SELECTED_SET } from "../stores/pages-store-mutation-types";
 import { DominionSets } from "../dominion/dominion-sets";
 import { State } from "../stores/pages-store";
-import { SetId } from "../dominion/set-id";
+import { SetId, IgnoreSetIdSet } from "../dominion/set-id";
 import { Vue, Component } from "vue-property-decorator";
-
-const SETS_TO_IGNORE = new Set([SetId.PROMOS]);
 
 @Component
 export default class SetsSidebar extends Vue {
   get sets() {
-    return DominionSets.getAllSets().filter((set) => !SETS_TO_IGNORE.has(set.setId));
+    return DominionSets.getAllSets().filter((set) => !IgnoreSetIdSet.has(set.setId));
   }
 
   get selectedSetId() {
+    if (!this.$storage.has("selectedSetId")) {
+       this.$storage.set("selectedSetId", (this.$store.state as State).selectedSetId);
+    }
     return (this.$store.state as State).selectedSetId;
   }
   set selectedSetId(value: SetId) {
+    this.$storage.set("selectedSetId", value);
     this.$store.commit(UPDATE_SELECTED_SET, value);
   }
 }

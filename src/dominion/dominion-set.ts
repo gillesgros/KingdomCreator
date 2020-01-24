@@ -3,6 +3,7 @@ import {SupplyCard} from "./supply-card";
 import {Event} from "./event";
 import {Landmark} from "./landmark";
 import {Project} from "./project";
+import {OtherCard} from "./other-card";
 import {SetId} from "./set-id";
 
 export class DominionSet {
@@ -13,7 +14,8 @@ export class DominionSet {
     readonly events: Event[],
     readonly landmarks: Landmark[],
     readonly projects: Project[],
-    readonly boons: Boon[]) {
+    readonly boons: Boon[],
+    readonly otherCards: OtherCard[]) {
   }
 
   public static fromJson(json: any) {
@@ -24,6 +26,7 @@ export class DominionSet {
         (json["events"] || []).map(Event.fromJson),
         (json["landmarks"] || []).map(Landmark.fromJson),
         (json["projects"] || []).map(Project.fromJson),
-        (json["boons"] || []).map(Boon.fromJson));
+        (json["boons"] || []).map(Boon.fromJson),
+        (json["othercards"] || []).map(OtherCard.fromJson));
   }
 }

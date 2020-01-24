@@ -3,7 +3,8 @@
 @require "transitions"
 @require "buttons"
 
-condensed-menu-open-height = 136px;
+nb-menu = 4
+condensed-menu-open-height = (10 + nb-menu*42)px;
 
 body
   margin: 0
@@ -207,7 +208,7 @@ input[type=radio]
 footer
   clear: both
   border-top: 1px #ddd solid
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: secondary-font;
   font-weight: 300;
   margin: 10px -10px -10px -10px
   padding: 10px

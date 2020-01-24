@@ -2,6 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 
+const BASIC_SUPPLY  =          "Basic Cards";
+const SUPPLY_CARD   =          "Supply Cards";
+const RUINS_CARD    =          "Ruins";
+
+
+console.log("in dominion-content-plugin.js")
+
 module.exports = class DominionContentPlugin {
   apply(compiler) {
     compiler.hooks.emit.tap('DominionContentPlugin', (compilation) => {
@@ -71,6 +78,15 @@ module.exports = class DominionContentPlugin {
           card.setId = setId;
         }
       }
+      if (set.othercards) {
+        for (var i = 0; i < set.othercards.length; i++) {
+          var card = set.othercards[i];
+     //     card.id = this.convertToOtherCardId(setId, card.name, card.type, card.shortId);
+          card.id = this.convertToCardId(setId, card.name);
+          card.shortId = this.tokenize(card.name);
+          card.setId = setId;
+        }
+      }
     }
     return sets;
   }
@@ -109,6 +125,21 @@ module.exports = class DominionContentPlugin {
 
   static convertToCardId(setId, name) {
     return setId + '_' + this.tokenize(name);
+  }
+
+  static convertToOtherCardId(setId, name, type, shortId) {
+    const typeTokenized = this.tokenize(type);
+    let tokenStr = '_' + typeTokenized + '_';
+    if (this.tokenize(BASIC_SUPPLY) == typeTokenized ||
+        this.tokenize(SUPPLY_CARD)  == typeTokenized ||
+        this.tokenize(RUINS_CARD)   == typeTokenized ) {
+      tokenStr = '_';
+      if (!(shortId === undefined)) { 
+        tokenStr = '_' + shortId;
+      }
+    }
+    
+    return setId + tokenStr + this.tokenize(name);
   }
 
   static tokenize(str) {

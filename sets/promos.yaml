@@ -178,4 +178,16 @@ events:
     isReaction: false
     isTrashing: false
 
+othercards:
+  - name: Sauna / Avanto
+    type: Action - Split Cards
+  - name: Sauna / Avanto _ Sauna
+    type: Action - Split Cards
+    cost:
+      treasure: 4
+  - name: Sauna / Avanto __ Avanto
+    type: Action - Split Cards
+    cost:
+      treasure: 5
+
 

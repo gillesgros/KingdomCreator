@@ -560,3 +560,81 @@ landmarks:
   - name: Triumphal Arch
   - name: Wall
   - name: Wolf Den
+
+
+othercards:
+  - name: Castles
+    type: Castles
+  - name: Castles _ Humble Castle
+    type: Castles
+  - name: Castles _ Crumbling Castle
+    type: Castles
+  - name: Castles _ Small Castle
+    type: Castles
+  - name: Castles _ Haunted Castle
+    type: Castles
+  - name: Castles _ Opulent Castle
+    type: Castles
+  - name: Castles _ Sprawling Castle
+    type: Castles
+  - name: Castles _ Grand Castle
+    type: Castles
+  - name: Castles _ King's Castle
+    type: Castles
+
+
+  - name: Catapult / Rocks
+    type: Action - Split Cards
+  - name: Catapult / Rocks _ Rocks
+    type: Action - Attack - Split Cards
+    cost:
+      treasure: 3
+  - name: Catapult / Rocks _ Catapult
+    type: Treasure - Split Cards
+    cost:
+      treasure: 4
+
+  - name: Encampment / Plunder
+    type: Action - Split Cards
+  - name: Encampment / Plunder _ Encampment
+    type: Action - Split Cards
+    cost:
+      treasure: 2
+  - name: Encampment / Plunder _ Plunder
+    type: Treasure - Split Cards
+    cost:
+      treasure: 5
+
+  - name: Patrician / Emporium
+    type: Action - Split Cards
+  - name: Patrician / Emporium _ Patrician
+    type: Action - Split Cards
+    cost:
+      treasure: 2
+  - name: Patrician / Emporium __ Emporium
+    type: Action - Split Cards
+    cost:
+      treasure: 5
+      
+  - name: Settlers / Bustling Village
+    type: Action - Split Cards
+  - name: Settlers / Bustling Village _ Settlers
+    type: Action - Split Cards
+    cost:
+      treasure: 2
+  - name: Settlers / Bustling Village __ Bustling Village
+    type: Action - Split Cards
+    cost:
+      treasure: 5
+
+  - name: Gladiator / Fortune
+    type: Action - Split Cards
+  - name: Gladiator / Fortune _ Gladiator
+    type: Action - Split Cards
+    cost:
+      treasure: 3
+  - name: Gladiator / Fortune __ Fortune
+    type: Treasure - Split Cards
+    cost:
+      treasure: 8
+      debt: 8

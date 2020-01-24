@@ -693,3 +693,16 @@ projects:
       treasure: 8
       potion: 0
       debt: 0
+
+othercards:
+  - name: Flag
+    type: Artifacts
+  - name: Horn
+    type: Artifacts
+  - name: Key
+    type: Artifacts
+  - name: Lantern
+    type: Artifacts
+  - name: Treasure Chest
+    type: Artifacts
+

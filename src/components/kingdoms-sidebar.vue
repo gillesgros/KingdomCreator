@@ -19,6 +19,7 @@
           </label>
         </div>
       </div><!-- sets All -->
+      <div class="clear"></div>
     </div>
   </div>
 </template>

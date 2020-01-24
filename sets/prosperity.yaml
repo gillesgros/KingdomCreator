@@ -308,3 +308,12 @@ cards:
     isTrashing: false
     isReaction: false
     isDuration: false
+
+othercards:
+  - name: Platinum
+    type: Basic Cards
+    isTreasure: true
+
+  - name: Colony
+    type: Basic Cards
+    isVictory: true

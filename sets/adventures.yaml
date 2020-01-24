@@ -709,6 +709,47 @@ events:
     isReaction: false
     isTrashing: false
 
+othercards:
+  - name: Page
+    type: Action - Travellers Page
+    cost:
+      treasure: 2
+  - name: Page2 _ Treasure Hunter
+    type: Action - Travellers Page
+    cost:
+      treasure: 3
+  - name: Page3 _ Warrior
+    type: Action - Attack - Travellers Page
+    cost:
+      treasure: 4
+  - name: Page4 _ Hero
+    type: Action - Travellers Page
+    cost:
+      treasure: 5
+  - name: Page5 _Champion
+    type: Action - Duration - Travellers Page
+    cost:
+      treasure: 6
 
+  - name: Peasant
+    type: Action - Attack - Travellers Peasant
+    cost:
+      treasure: 2
+  - name: Peasant2 _ Soldier
+    type: Action - Attack - Travellers Peasant
+    cost:
+      treasure: 3
+  - name: Peasant3 _ Fugitive
+    type: Action - Travellers Peasant
+    cost:
+      treasure: 4
+  - name: Peasant4 _ Disciple
+    type: Action - Travellers Peasant
+    cost:
+      treasure: 5
+  - name: Peasant5 _ Teacher
+    type: Action - Reserve - Travellers Peasant
+    cost:
+      treasure: 6
 
 

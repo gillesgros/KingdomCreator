@@ -330,3 +330,44 @@ cards:
     isDuration: false
     isActionSupplier: true
 
+othercards:
+  - name: Copper
+    type: Basic Cards
+    isTreasure : true
+    cost:
+      treasure: 0
+    
+  - name: Silver
+    type: Basic Cards
+    isTreasure : true
+    cost:
+      treasure: 3
+    
+  - name: Gold
+    type: Basic Cards
+    isTreasure : true
+    cost:
+      treasure: 6
+    
+  - name: Estate
+    type: Basic Cards
+    isVictory: true
+    cost:
+      treasure: 2
+
+  - name: Duchy
+    type: Basic Cards
+    isVictory: true
+    cost:
+      treasure: 5
+
+  - name: Province
+    type: Basic Cards
+    isVictory: true
+    cost:
+      treasure: 8
+
+  - name: Curse
+    type: Basic Cards
+    cost:
+      treasure: 0
