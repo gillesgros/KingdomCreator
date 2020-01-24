@@ -69,7 +69,7 @@ cards:
     isBuySupplier: false
     isDrawer: false
     isDoom: false
-    isDuration: true
+    isDuration: false
     isFate: false
     isNight: true
     isReaction: false
