@@ -18,6 +18,7 @@ module.exports = function(isProduction) {
       sets: ["./src/sets-page.ts", "./styles/sets.styl"],
       kingdoms: ["./src/kingdoms-page.ts", "./styles/kingdoms.styl"],
       rules: ["./src/rules-page.ts", "./styles/rules.styl"],
+      card: ["./src/card-page.ts", "./styles/card.styl"],
     },
     output: {
       path: path.resolve(__dirname, "docs"),
@@ -89,6 +90,12 @@ module.exports = function(isProduction) {
         template: "./views/rules.pug",
         chunks: ["rules"],
         filename: "rules.html",
+        isProduction: isProduction,
+      }),
+      new HtmlWebpackPlugin({
+        template: "./views/card.pug",
+        chunks: ["card"],
+        filename: "card.html",
         isProduction: isProduction,
       }),
       new MiniCssExtractPlugin({

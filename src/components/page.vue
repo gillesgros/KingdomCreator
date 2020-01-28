@@ -67,6 +67,7 @@ Vue.use(Vue2Storage, {
 });
 
 export enum MenuItemType {
+  CARDS,
   RANDOMIZER,
   KINGDOMS,
   SETS,
@@ -79,6 +80,7 @@ class MenuItem {
 };
 
 const MENU_ITEMS = [
+  new MenuItem(MenuItemType.CARDS, "Card", "/card.html"),
   new MenuItem(MenuItemType.RANDOMIZER, "Randomizer", "/index.html"),
   new MenuItem(MenuItemType.KINGDOMS, "Recommended Kingdoms", "/kingdoms.html"),
   new MenuItem(MenuItemType.SETS, "Sets", "/sets.html"),
