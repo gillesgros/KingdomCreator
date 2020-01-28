@@ -2,13 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 
-const BASIC_SUPPLY  =          "Basic Cards";
-const SUPPLY_CARD   =          "Supply Cards";
-const RUINS_CARD    =          "Ruins";
-
-
-console.log("in dominion-content-plugin.js")
-
 module.exports = class DominionContentPlugin {
   apply(compiler) {
     compiler.hooks.emit.tap('DominionContentPlugin', (compilation) => {
@@ -41,8 +34,8 @@ module.exports = class DominionContentPlugin {
       var set = sets[setId];
       for (var i = 0; i < set.cards.length; i++) {
         var card = set.cards[i];
-        card.id = this.convertToCardId(setId, card.name);
-        card.shortId = this.tokenize(card.name);
+        card.id = this.convertToCardId(setId, card.id, card.name);
+        card.shortId = this.tokenizeShortId(card.shortId, card.name);
         card.setId = setId;
       }
 
@@ -81,9 +74,8 @@ module.exports = class DominionContentPlugin {
       if (set.othercards) {
         for (var i = 0; i < set.othercards.length; i++) {
           var card = set.othercards[i];
-     //     card.id = this.convertToOtherCardId(setId, card.name, card.type, card.shortId);
-          card.id = this.convertToCardId(setId, card.name);
-          card.shortId = this.tokenize(card.name);
+          card.id = this.convertToCardId(setId, card.id, card.name);
+          card.shortId = this.tokenizeShortId(card.shortId, card.name);
           card.setId = setId;
         }
       }
@@ -123,23 +115,12 @@ module.exports = class DominionContentPlugin {
     return setId + '_boon_' + this.tokenize(name);
   }
 
-  static convertToCardId(setId, name) {
-    return setId + '_' + this.tokenize(name);
+  static convertToCardId(setId, id, name) {
+    return (id == undefined) ? setId + '_' + this.tokenize(name) : id;
   }
-
-  static convertToOtherCardId(setId, name, type, shortId) {
-    const typeTokenized = this.tokenize(type);
-    let tokenStr = '_' + typeTokenized + '_';
-    if (this.tokenize(BASIC_SUPPLY) == typeTokenized ||
-        this.tokenize(SUPPLY_CARD)  == typeTokenized ||
-        this.tokenize(RUINS_CARD)   == typeTokenized ) {
-      tokenStr = '_';
-      if (!(shortId === undefined)) { 
-        tokenStr = '_' + shortId;
-      }
-    }
-    
-    return setId + tokenStr + this.tokenize(name);
+  
+  static tokenizeShortId(shortId, name) {
+    return (shortId == undefined) ? this.tokenize(name) : shortId;
   }
 
   static tokenize(str) {

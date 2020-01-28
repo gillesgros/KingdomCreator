@@ -5,6 +5,7 @@ import {SetId} from "../dominion/set-id";
 export enum SortOption {
   SET = "set",
   ALPHABETICAL = "alpha",
+  SHORTALPHA = "shortid",
   COST = "cost",
 }
 

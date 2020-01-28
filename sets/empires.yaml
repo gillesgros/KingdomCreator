@@ -565,76 +565,100 @@ landmarks:
 othercards:
   - name: Castles
     type: Castles
-  - name: Castles _ Humble Castle
+    shortId: Castles step 0
+  - name: Humble Castle
     type: Castles
-  - name: Castles _ Crumbling Castle
+    shortId: Castles step 1
+  - name: Crumbling Castle
     type: Castles
-  - name: Castles _ Small Castle
+    shortId: Castles step 2
+  - name: Small Castle
     type: Castles
-  - name: Castles _ Haunted Castle
+    shortId: Castles step 3
+  - name: Haunted Castle
     type: Castles
-  - name: Castles _ Opulent Castle
+    shortId: Castles step 4
+  - name: Opulent Castle
     type: Castles
-  - name: Castles _ Sprawling Castle
+    shortId: Castles step 5
+  - name:  Sprawling Castle
     type: Castles
-  - name: Castles _ Grand Castle
+    shortId: Castles step 6
+  - name: Grand Castle
     type: Castles
-  - name: Castles _ King's Castle
+    shortId: Castles step 7
+  - name: King's Castle
     type: Castles
+    shortId: Castles step 18
 
 
   - name: Catapult / Rocks
     type: Action - Split Cards
-  - name: Catapult / Rocks _ Rocks
+    shortId: Catapult / Rocks
+  - name: Rocks
     type: Action - Attack - Split Cards
+    shortId: Catapult / Rocks step 2
     cost:
       treasure: 3
-  - name: Catapult / Rocks _ Catapult
+  - name: Catapult
     type: Treasure - Split Cards
+    shortId: Catapult / Rocks step 1
     cost:
       treasure: 4
 
   - name: Encampment / Plunder
     type: Action - Split Cards
-  - name: Encampment / Plunder _ Encampment
-    type: Action - Split Cards
+    shortId: Encampment / Plunder
+  - name: Encampment
+    shortId: Encampment / Plunder_ Encampment
+    type: Action - Split Cards step 1
     cost:
       treasure: 2
-  - name: Encampment / Plunder _ Plunder
+  - name: Plunder
     type: Treasure - Split Cards
+    shortId: Encampment / Plunder step 2
     cost:
       treasure: 5
 
   - name: Patrician / Emporium
     type: Action - Split Cards
-  - name: Patrician / Emporium _ Patrician
+    shortId: Patrician / Emporium
+  - name: Patrician
     type: Action - Split Cards
+    shortId: Patrician / Emporium step 1
     cost:
       treasure: 2
-  - name: Patrician / Emporium __ Emporium
+  - name: Emporium
     type: Action - Split Cards
+    shortId: Patrician / Emporium step 2
     cost:
       treasure: 5
       
   - name: Settlers / Bustling Village
     type: Action - Split Cards
-  - name: Settlers / Bustling Village _ Settlers
+    shortId: Settlers / Bustling Villag
+  - name: Settlers
     type: Action - Split Cards
+    shortId: Settlers / Bustling Village step 2
     cost:
       treasure: 2
-  - name: Settlers / Bustling Village __ Bustling Village
+  - name: Bustling Village
     type: Action - Split Cards
+    shortId: Settlers / Bustling Village step 1
     cost:
       treasure: 5
 
   - name: Gladiator / Fortune
     type: Action - Split Cards
-  - name: Gladiator / Fortune _ Gladiator
+    shortId: Gladiator / Fortune
+  - name: Gladiator
     type: Action - Split Cards
+    shortId: Gladiator / Fortune step 1
     cost:
       treasure: 3
-  - name: Gladiator / Fortune __ Fortune
+  - name: Fortune
     type: Treasure - Split Cards
+    shortId: Gladiator / Fortune step 2
     cost:
       treasure: 8
       debt: 8

@@ -712,43 +712,53 @@ events:
 othercards:
   - name: Page
     type: Action - Travellers Page
+    shortId: Traveller Page step 1
     cost:
       treasure: 2
-  - name: Page2 _ Treasure Hunter
+  - name: Treasure Hunter
     type: Action - Travellers Page
+    shortId: Traveller Page step 2
     cost:
       treasure: 3
-  - name: Page3 _ Warrior
+  - name: Warrior
     type: Action - Attack - Travellers Page
+    shortId: Traveller Page step 3
     cost:
       treasure: 4
-  - name: Page4 _ Hero
+  - name: Hero
     type: Action - Travellers Page
+    shortId: Traveller Page step 4
     cost:
       treasure: 5
-  - name: Page5 _Champion
+  - name: Champion
     type: Action - Duration - Travellers Page
+    shortId: Traveller Page step 5
     cost:
       treasure: 6
 
   - name: Peasant
     type: Action - Attack - Travellers Peasant
+    shortId: Traveller Peasant step 1
     cost:
       treasure: 2
-  - name: Peasant2 _ Soldier
+  - name: Soldier
     type: Action - Attack - Travellers Peasant
+    shortId: Traveller Peasant step 2
     cost:
       treasure: 3
-  - name: Peasant3 _ Fugitive
+  - name: Fugitive
     type: Action - Travellers Peasant
+    shortId: Traveller Peasant step 3
     cost:
       treasure: 4
-  - name: Peasant4 _ Disciple
+  - name: Disciple
     type: Action - Travellers Peasant
+    shortId: Traveller Peasant step 4
     cost:
       treasure: 5
-  - name: Peasant5 _ Teacher
+  - name: Teacher
     type: Action - Reserve - Travellers Peasant
+    shortId: Traveller Peasant step 5
     cost:
       treasure: 6
 
