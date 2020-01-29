@@ -17,8 +17,8 @@ export class SupplyCardSorter {
         return costComparison;
       }
     }
-    if (sortOption == SortOption.SHORTALPHA) {
-      return a.shortId == b.shortId ? 0 : a.shortId < b.shortId ? -1 : 1;
+    if (sortOption == SortOption.ORDERSTRING) {
+      return a.orderstring == b.orderstring ? 0 : a.orderstring < b.orderstring ? -1 : 1;
     }
     return a.name == b.name ? 0 : a.name < b.name ? -1 : 1;
   }

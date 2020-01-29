@@ -3,16 +3,16 @@ export const Cards_list:DigitalCard[]= [
   /* landscape */	{	id: "alms",  frenchName: "Aumône",  artwork: "http://wiki.dominionstrategy.com/images/a/ab/AlmsArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="line-height:26px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Une fois par tour: si vous n\'avez pas de carte Trésor</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">en jeu, recevez une carte coûtant jusqu\'à      .</div></div><br></div><div class="card-text-coin-icon" style="transform:scale(0.2); top:33px; display: inline;left:370px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">4</div></div></div></div>'
   /* landscape */	},	
-  /* landscape */	{	id: "ball",  frenchName: "Bal",  artwork: "http://wiki.dominionstrategy.com/images/thumb/e/e5/BallArt.jpg/452px-BallArt.jpg",
+  /* landscape */	{	id: "ball",  frenchName: "Bal",  artwork: "http://wiki.dominionstrategy.com/images/e/e5/BallArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="position:relative; top:10px;"><div style="line-height:20px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Prenez votre jeton -       .</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">Recevez 2 cartes coûtant chacune jusqu\'à       .</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.2); top:12px; display: inline;left:284px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div><div class="card-text-coin-icon" style="transform:scale(0.2); top:33px; display: inline;left:370px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">4</div></div></div></div>'
   /* landscape */	},	
-  /* landscape */	{	id: "bonfire",  frenchName: "Feu de joie",  artwork: "http://wiki.dominionstrategy.com/images/thumb/4/4c/BonfireArt.jpg/452px-BonfireArt.jpg",
+  /* landscape */	{	id: "bonfire",  frenchName: "Feu de joie",  artwork: "http://wiki.dominionstrategy.com/images/4/4c/BonfireArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:14px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">Écartez jusqu\'à 2 cartes en jeu.</div></div><br></div>'
   /* landscape */	},	
   /* landscape */	{	id: "borrow",  frenchName: "Emprunt",  artwork: "http://wiki.dominionstrategy.com/images/a/af/BorrowArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="position:relative; top:10px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:18.5px;">Une fois par tour : <div style="display: inline; font-weight: bold;">+1 Achat</div>. Si votre jeton -1 Carte n\'est</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18.5px;">pas sur votre pioche, placez-le à cet endroit et <div style="display: inline; font-weight: bold;">+</div>       .</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.2); top:34px; display: inline;left:380px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div></div>'
   /* landscape */	},	
-  /* landscape */	{	id: "expedition",  frenchName: "Expedition",  artwork: "http://wiki.dominionstrategy.com/images/thumb/c/c0/ExpeditionArt.jpg/452px-ExpeditionArt.jpg",
+  /* landscape */	{	id: "expedition",  frenchName: "Expedition",  artwork: "http://wiki.dominionstrategy.com/images/c/c0/ExpeditionArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="position:relative; top:10px;"><div style="line-height:20px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Piochez 2 cartes supplémentaires</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">pour votre prochaine main.</div></div><br></div></div></div>'
   /* landscape */	},	
   /* landscape */	{	id: "ferry",  frenchName: "Bac",  artwork: "http://wiki.dominionstrategy.com/images/7/7a/FerryArt.jpg",
@@ -21,7 +21,7 @@ export const Cards_list:DigitalCard[]= [
   /* landscape */	{	id: "inheritance",  frenchName: "Héritage",  artwork: "http://wiki.dominionstrategy.com/images/d/dd/InheritanceArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="line-height:14px;"><div style="display:inline;"><div style="display:inline; font-size:12px;">Une fois dans la partie : mettez de côté une carte Action non-Ordre de la réserve</div></div><br><div style="display:inline;"><div style="display:inline; font-size:12px;">coûtant jusqu\'à      . Placez dessus votre jeton Domaine. (Durant vos tours, les Domaines </div></div><br><div style="display:inline;"><div style="display:inline; font-size:12px;">sont des Actions qui se lisent « Jouez la carte sous votre jeton Domaine, sans la déplacer ».)</div></div><br></div><div class="card-text-coin-icon" style="transform:scale(0.12); top:25px; display: inline;left:83px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">4</div></div></div></div>'
   /* landscape */	},	
-  /* landscape */	{	id: "lostarts",  frenchName: "Arts anciens",  artwork: "http://wiki.dominionstrategy.com/images/thumb/4/49/LostArtsArt.jpg/452px-LostArtsArt.jpg",
+  /* landscape */	{	id: "lostarts",  frenchName: "Arts anciens",  artwork: "http://wiki.dominionstrategy.com/images/4/49/LostArtsArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="position:relative; top:10px;"><div style="line-height:15px;"><div style="display:inline;"><div style="display:inline; font-size:14px;">Placez votre jeton +1 Action sur une pile de cartes Action de la réserve.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:14px;">(Quand vous jouez une carte de cette pile, obtenez d\'abord <div style="display: inline; font-weight: bold;">+1 Action</div>.)</div></div><br></div></div></div>'
   /* landscape */	},	
   /* landscape */	{	id: "mission",  frenchName: "Mission",  artwork: "http://wiki.dominionstrategy.com/images/9/90/MissionArt.jpg",
@@ -45,7 +45,7 @@ export const Cards_list:DigitalCard[]= [
   /* landscape */	{	id: "save",  frenchName: "Resserre",  artwork: "http://wiki.dominionstrategy.com/images/6/6a/SaveArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="display:inline;"><div style="display:inline; font-size:16px;">Une fois par tour : <div style="display: inline; font-weight: bold;">+1 Achat</div>. Mettez de côté une carte de votre</div></div><br><div style="display:inline;"><div style="display:inline; font-size:16px;">main et prenez-la en main après la phase Ajustement de ce tour.</div></div><br></div>'
   /* landscape */	},	
-  /* landscape */	{	id: "scoutingparty",  frenchName: "Pistage",  artwork: "http://wiki.dominionstrategy.com/images/thumb/0/0d/ScoutingPartyArt.jpg/452px-ScoutingPartyArt.jpg",
+  /* landscape */	{	id: "scoutingparty",  frenchName: "Pistage",  artwork: "http://wiki.dominionstrategy.com/images/0/0d/ScoutingPartyArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="position:relative; top:-5px;"><div style="font-weight: bold;"><div style="display:inline;"><div style="display:inline; font-size:22px;">+1 Achat</div></div><br></div></div><div style="position:relative; top:-7px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:16px;">Consultez les 5 premières cartes de votre pioche.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:16px;">Défaussez-en 3 et replacez les autres dans l\'ordre de votre choix.</div></div><br></div></div></div>'
   /* landscape */	},	
   /* landscape */	{	id: "seaway",  frenchName: "Route maritime",  artwork: "http://wiki.dominionstrategy.com/images/e/ec/SeawayArt.jpg",
@@ -54,7 +54,7 @@ export const Cards_list:DigitalCard[]= [
   /* landscape */	{	id: "travellingfair",  frenchName: "Forains",  artwork: "http://wiki.dominionstrategy.com/images/d/d4/Travelling_FairArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="position:relative; top:-5px;"><div style="font-weight: bold;"><div style="display:inline;"><div style="display:inline; font-size:22px;">+2 Achats</div></div><br></div></div><div style="position:relative; top:-7px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Quand vous recevez une carte à ce tour,</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">vous pouvez la placer sur votre pioche.</div></div><br></div></div></div>'
   /* landscape */	},	
-  /* landscape */	{	id: "trade",  frenchName: "Commerce",  artwork: "http://wiki.dominionstrategy.com/images/7/72/TraderArt.jpg",
+  /* landscape */	{	id: "trade",  frenchName: "Commerce",  artwork: "http://wiki.dominionstrategy.com/images/f/f7/TradeArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Écartez jusqu\'à 2 cartes de votre main.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">Recevez un Argent par carte écartée.</div></div><br></div>'
   /* landscape */	},	
   /* landscape */	{	id: "training",  frenchName: "Entraînement",  artwork: "http://wiki.dominionstrategy.com/images/3/34/TrainingArt.jpg",
@@ -78,7 +78,7 @@ export const Cards_list:DigitalCard[]= [
   /* landscape */	{	id: "tax",  frenchName: "Taxe",  artwork: "http://wiki.dominionstrategy.com/images/2/21/TaxArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="line-height:17px;"><div style="display:inline;"><div style="display:inline; font-size:17px;">Ajoutez       <div class="card-text-debt-icon" style="transform:scale(0.18); top:2px; display: inline;left:155px;"><div class="card-text-debt-text-container" style="display:inline;"><div class="card-text-debt-text" style="display:inline; top:48px;">2</div></div></div>à une pile de la réserve.</div></div><br></div><div class="horizontal-line" style="width:200px; height:3px;margin-top:4px;"></div><div style="line-height:17px;"><div style="display:inline;"><div style="display:inline; font-size:17px;">Mise en place : ajoutez       <div class="card-text-debt-icon" style="transform:scale(0.18); top:30px; display: inline;left:195px;"><div class="card-text-debt-text-container" style="display:inline;"><div class="card-text-debt-text" style="display:inline; top:48px;">1</div></div></div>à chaque pile de la réserve.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:17px;">Quand un joueur achète une carte, il prend les       <div class="card-text-debt-icon" style="transform:scale(0.17); top:51px; display: inline;left:336px;"><div class="card-text-debt-text-container" style="display:inline;"><div class="card-text-debt-text" style="display:inline; top:48px;"></div></div></div>de sa pile.</div></div><br></div></div>'
   /* landscape */	},	
-  /* landscape */	{	id: "banquet",  frenchName: "Banquet",  artwork: "http://wiki.dominionstrategy.com/images/thumb/2/2b/BanquetArt.jpg/452px-BanquetArt.jpg",
+  /* landscape */	{	id: "banquet",  frenchName: "Banquet",  artwork: "http://wiki.dominionstrategy.com/images/2/2b/BanquetArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Recevez 2 Cuivres et une carte non-Victoire</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">coûtant jusqu\'à      <div class="card-text-coin-icon" style="transform:scale(0.2); top:35px; display: inline;left:265px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">5</div></div></div>.</div></div><br></div>'
   /* landscape */	},	
   /* landscape */	{	id: "ritual",  frenchName: "Rituel",  artwork: "http://wiki.dominionstrategy.com/images/c/cd/RitualArt.jpg",
@@ -90,10 +90,10 @@ export const Cards_list:DigitalCard[]= [
   /* landscape */	{	id: "wedding",  frenchName: "Mariage",  artwork: "http://wiki.dominionstrategy.com/images/2/25/WeddingArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">         </div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">Recevez un Or.</div></div><br><div class="card-text-vp-icon-container" style="display:inline; transform:scale(0.19); top:8px;left:220px;"><div class="card-text-vp-text-container"><div class="card-text-vp-text" style="top:8px;">+1</div></div><div class="card-text-vp-icon"></div></div></div>'
   /* landscape */	},	
-  /* landscape */	{	id: "windfall",  frenchName: "Manne",  artwork: "http://wiki.dominionstrategy.com/images/thumb/f/f0/WindfallArt.jpg/452px-WindfallArt.jpg",
+  /* landscape */	{	id: "windfall",  frenchName: "Manne",  artwork: "http://wiki.dominionstrategy.com/images/f/f0/WindfallArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:14px;"><div style="display:inline;"><div style="display:inline; font-size:18px;">Si votre pioche et votre défausse sont vides, recevez 3 Ors.</div></div><br></div>'
   /* landscape */	},	
-  /* landscape */	{	id: "conquest",  frenchName: "Conquête",  artwork: "http://wiki.dominionstrategy.com/images/thumb/9/96/ConquestArt.jpg/452px-ConquestArt.jpg",
+  /* landscape */	{	id: "conquest",  frenchName: "Conquête",  artwork: "http://wiki.dominionstrategy.com/images/9/96/ConquestArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="display:inline;"><div style="display:inline; font-size:21px;">Recevez 2 Argents.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">         par Argent que vous avez reçu à ce tour.</div></div><br><div class="card-text-vp-icon-container" style="display:inline; transform:scale(0.18); top:38px;left:51px;"><div class="card-text-vp-text-container"><div class="card-text-vp-text" style="top:8px;">+1</div></div><div class="card-text-vp-icon"></div></div></div>'
   /* landscape */	},	
   /* landscape */	{	id: "dominate",  frenchName: "Domination",  artwork: "http://wiki.dominionstrategy.com/images/e/e7/DominateArt.jpg",
@@ -126,7 +126,7 @@ export const Cards_list:DigitalCard[]= [
   /* landscape */	{	id: "fountain",  frenchName: "Fontaine",  artwork: "http://wiki.dominionstrategy.com/images/5/5b/FountainArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:14px;"><div style="display:inline;"><div style="display:inline; font-size:18.5px;">Pour le décompte,           <div class="card-text-vp-icon-container" style="display:inline; transform:scale(0.18); top:6px;left:162px;"><div class="card-text-vp-text-container"><div class="card-text-vp-text" style="top:8px;">15</div></div><div class="card-text-vp-icon"></div></div>si vous avez au moins 10 Cuivres.</div></div><br></div>'
   /* landscape */	},	
-  /* landscape */	{	id: "keep",  frenchName: "Keep",  artwork: "http://wiki.dominionstrategy.com/images/thumb/b/b5/KeepArt.jpg/452px-KeepArt.jpg",
+  /* landscape */	{	id: "keep",  frenchName: "Fort",  artwork: "http://wiki.dominionstrategy.com/images/b/b5/KeepArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="line-height:16.5px;"><div style="display:inline;"><div style="display:inline; font-size:16.5px;">Pour le décompte,          par carte Trésor de nom différent</div></div><br><div style="display:inline;"><div style="display:inline; font-size:16.5px;">dont avez au moins autant d\'exemplaires</div></div><br><div style="display:inline;"><div style="display:inline; font-size:16.5px;">que chacun de vos adversaires.</div></div><br></div><div class="card-text-vp-icon-container" style="display:inline; transform:scale(0.17); top:1px;left:168px;"><div class="card-text-vp-text-container"><div class="card-text-vp-text" style="top:8px;">5</div></div><div class="card-text-vp-icon"></div></div></div>'
   /* landscape */	},	
   /* landscape */	{	id: "labyrinth",  frenchName: "Labyrinthe",  artwork: "http://wiki.dominionstrategy.com/images/8/8d/LabyrinthArt.jpg",
@@ -249,8 +249,8 @@ export const Cards_list:DigitalCard[]= [
   /* landscape */	{	id: "lostinthewoods",  frenchName: "Perdu dans les bois",  artwork: "http://wiki.dominionstrategy.com/images/f/fb/Lost_in_the_WoodsArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">Au début de votre tour, vous pouvez</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">défausser une carte pour appliquer une Aubaine.</div></div><br></div>'
   /* landscape */	},	
-  /* landscape */	{	id: "capitalism",  frenchName: "Capitalisme",  artwork: "http://wiki.dominionstrategy.com/images/1/19/CapitalismArt.jpg",
-  /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="position:relative; top:10px;"><div style="line-height:21px;"><div style="display:inline;"><div style="display:inline; font-size:21px;">Pendant vos tours, les cartes Action ayant dans leur</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">texte un montant « +      » sont aussi des Trésors.</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.2); top:35px; display: inline;left:190px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;"></div></div></div></div>'
+  /* landscape */	{	id: "citygate",  frenchName: "Porte ",  artwork: "http://wiki.dominionstrategy.com/images/e/e2/City_GateArt.jpg",
+  /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="position:relative; top:10px;"><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">Au début de votre tour, <div style="display: inline; font-weight: bold;">+1 Carte</div>, puis replacez</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">une carte de votre main sur votre pioche.</div></div><br></div></div></div>'
   /* landscape */	},	
   /* landscape */		
   /* landscape */		
@@ -264,6 +264,33 @@ export const Cards_list:DigitalCard[]= [
   /* landscape */		
   /* landscape */		
   /* landscape */		
+  /* landscape */		
+  /* landscape */		
+  /* landscape */		
+  /* landscape */		
+  /* landscape */		
+  /* landscape */		
+  /* landscape */	{	id: "sinisterplot",  frenchName: "Machination",  artwork: "http://wiki.dominionstrategy.com/images/0/05/Sinister_PlotArt.jpg",
+  /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="position:relative; top:10px;"><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">Au début de votre tour, ajoutez un jeton ici, ou</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">retirez tous vos jetons pour <div style="display: inline; font-weight: bold;">+1 Carte</div> chacun.</div></div><br></div></div></div>'
+  /* landscape */	},	
+  /* landscape */		
+  /* landscape */		
+  /* landscape */		
+  /* landscape */	{	id: "capitalism",  frenchName: "Capitalisme",  artwork: "http://wiki.dominionstrategy.com/images/1/19/CapitalismArt.jpg",
+  /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="position:relative; top:10px;"><div style="line-height:21px;"><div style="display:inline;"><div style="display:inline; font-size:21px;">Pendant vos tours, les cartes Action ayant dans leur</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">texte un montant « +      » sont aussi des Trésors.</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.2); top:35px; display: inline;left:190px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;"></div></div></div></div>'
+  /* landscape */	},	
+  /* landscape */		
+  /* landscape */		
+  /* landscape */		
+  /* landscape */		
+  /* landscape */		
+  /* landscape */		
+  /* landscape */		
+  /* landscape */		
+  /* landscape */		
+  /* landscape */	{	id: "roadnetwork",  frenchName: "Réseau routier",  artwork: "http://wiki.dominionstrategy.com/images/d/d7/Road_NetworkArt.jpg",
+  /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="position:relative; top:10px;"><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">Quand un autre joueur reçoit une carte Victoire,</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;"><div style="display: inline; font-weight: bold;">+1 Carte</div>.</div></div><br></div></div></div>'
+  /* landscape */	},	
   /* landscape */		
   /* landscape */		
   /* landscape */		
@@ -282,4 +309,11 @@ export const Cards_list:DigitalCard[]= [
   /* landscape */	{	id: "flag",  frenchName: "Drapeau",  artwork: "http://wiki.dominionstrategy.com/images/8/82/FlagArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:14px;"><div style="position:relative; top:5px;"><div style="display:inline;"><div style="display:inline; font-size:24px;">Quand vous piochez votre main, <div style="display: inline; font-weight: bold;">+1 Carte</div>.</div></div><br></div></div>'
   /* landscape */	},	
+  /* landscape */		
+  /* landscape */		
+  /* landscape */		
+  /* landscape */	{	id: "key",  frenchName: "clé",  artwork: "http://wiki.dominionstrategy.com/images/a/a2/KeyArt.jpg",
+  /* landscape */		text_html: '<div class="landscape-text" style="top:14px;"><div style="position:relative; top:10px;"><div style="line-height:26px;"><div style="display:inline;"><div style="display:inline; font-size:26px;">Au début de votre tour, <div style="display: inline; font-weight: bold;">+</div>      .</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.24); top:10px; display: inline;left:332px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div></div>'
+  /* landscape */	},	
+
   /* landscape */];		

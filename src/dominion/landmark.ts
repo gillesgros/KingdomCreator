@@ -8,6 +8,7 @@ export class Landmark implements Addon {
     readonly shortId: string,
     readonly setId: SetId,
     readonly name: string,
+    readonly orderstring: string,
     readonly cost: Cost) {
   }
 
@@ -18,6 +19,7 @@ export class Landmark implements Addon {
         json["shortId"],
         json["setId"],
         json["name"],
+        json["orderstring"] || "",
         new Cost(0,0,0));
     }
     return new Landmark(
@@ -25,6 +27,7 @@ export class Landmark implements Addon {
       json["shortId"],
       json["setId"],
       json["name"],
+      json["orderstring"] || "",
       Cost.fromJson(json["cost"]));
   }
 }

@@ -34,12 +34,10 @@ export const OtherCards_list:DigitalCard[]= [
 	text_html: '<div class="card-text" style="top:2px;"></div>'
   },	
 { 	id: "curse",
-	artwork: "http://wiki.dominionstrategy.com//images/thumb/b/b9/Curse-new.jpg/200px-Curse-new.jpg",
+	artwork: "http://wiki.dominionstrategy.com//images/b/b9/Curse-new.jpg",
 	frenchName: "Malédiction",
 	text_html: '<div class="card-text" style="top:2px;"></div>'
   },	
-	
-
 
 	
 { 	id: "potion",
@@ -47,23 +45,19 @@ export const OtherCards_list:DigitalCard[]= [
 	frenchName: "Potion",
 	text_html: '<div class="card-text" style="top:2px;"></div>'
   },	
-	
-	
-	
-	
+
 	
 { 	id: "platinum",
 	artwork: "http://wiki.dominionstrategy.com//images/1/1a/PlatinumArt.jpg",
 	frenchName: "Platine",
 	text_html: '<div class="card-text" style="top:2px;"></div>'
   },	
+
 { 	id: "colony",
 	artwork: "http://wiki.dominionstrategy.com//images/2/2d/ColonyArt.jpg",
 	frenchName: "Colonie",
 	text_html: '<div class="card-text" style="top:2px;"></div>'
   },	
-	
-	
 
 	
 ];	

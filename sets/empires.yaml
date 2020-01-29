@@ -336,7 +336,6 @@ cards:
     isActionSupplier: false
     isAttack: false
     isBuySupplier: true
-    
     isDrawer: true
     isMultiDrawer: true
     isDuration: false
@@ -564,101 +563,119 @@ landmarks:
 
 othercards:
   - name: Castles
-    type: Castles
-    shortId: Castles step 0
+    type: Treasure - Victory - Castle
+    orderstring: Castles step 0
   - name: Humble Castle
-    type: Castles
-    shortId: Castles step 1
+    type: Victory - Castle
+    orderstring: Castles step 1
+    cost:
+      treasure: 3
   - name: Crumbling Castle
-    type: Castles
-    shortId: Castles step 2
+    type: Action - Victory - Castle
+    orderstring: Castles step 2
+    cost:
+      treasure: 4
   - name: Small Castle
-    type: Castles
-    shortId: Castles step 3
+    type: Victory - Castle
+    orderstring: Castles step 3
+    cost:
+      treasure: 5
   - name: Haunted Castle
-    type: Castles
-    shortId: Castles step 4
+    type: Action - Victory - Castle
+    orderstring: Castles step 4
+    cost:
+      treasure: 6
   - name: Opulent Castle
-    type: Castles
-    shortId: Castles step 5
+    type: Victory - Castle
+    orderstring: Castles step 5
+    cost:
+      treasure: 7
   - name:  Sprawling Castle
-    type: Castles
-    shortId: Castles step 6
+    type: Victory - Castle
+    orderstring: Castles step 6
+    cost:
+      treasure: 8
   - name: Grand Castle
-    type: Castles
-    shortId: Castles step 7
-  - name: King's Castle
-    type: Castles
-    shortId: Castles step 18
+    type: Victory - Castle
+    orderstring: Castles step 7
+    cost:
+      treasure: 9
+  - name: Kings Castle
+    type: Victory - Castle
+    orderstring: Castles step 8
+    cost:
+      treasure: 10
+
+
 
 
   - name: Catapult / Rocks
     type: Action - Split Cards
-    shortId: Catapult / Rocks
-  - name: Rocks
+    orderstring: Catapult / Rocks
+  - name: Catapult
     type: Action - Attack - Split Cards
-    shortId: Catapult / Rocks step 2
+    orderstring: Catapult / Rocks step 2
     cost:
       treasure: 3
-  - name: Catapult
+  - name: Rocks
     type: Treasure - Split Cards
-    shortId: Catapult / Rocks step 1
+    orderstring: Catapult / Rocks step 1
     cost:
       treasure: 4
 
   - name: Encampment / Plunder
     type: Action - Split Cards
-    shortId: Encampment / Plunder
+    orderstring: Encampment / Plunder
   - name: Encampment
-    shortId: Encampment / Plunder_ Encampment
+    orderstring: Encampment / Plunder_ Encampment
     type: Action - Split Cards step 1
     cost:
       treasure: 2
   - name: Plunder
     type: Treasure - Split Cards
-    shortId: Encampment / Plunder step 2
+    orderstring: Encampment / Plunder step 2
     cost:
       treasure: 5
 
   - name: Patrician / Emporium
     type: Action - Split Cards
-    shortId: Patrician / Emporium
+    orderstring: Patrician / Emporium
   - name: Patrician
     type: Action - Split Cards
-    shortId: Patrician / Emporium step 1
+    orderstring: Patrician / Emporium step 1
     cost:
       treasure: 2
   - name: Emporium
     type: Action - Split Cards
-    shortId: Patrician / Emporium step 2
+    orderstring: Patrician / Emporium step 2
     cost:
       treasure: 5
       
   - name: Settlers / Bustling Village
     type: Action - Split Cards
-    shortId: Settlers / Bustling Villag
+    orderstring: Settlers / Bustling Villag
   - name: Settlers
     type: Action - Split Cards
-    shortId: Settlers / Bustling Village step 2
+    orderstring: Settlers / Bustling Village step 2
     cost:
       treasure: 2
   - name: Bustling Village
     type: Action - Split Cards
-    shortId: Settlers / Bustling Village step 1
+    orderstring: Settlers / Bustling Village step 1
     cost:
       treasure: 5
 
   - name: Gladiator / Fortune
     type: Action - Split Cards
-    shortId: Gladiator / Fortune
+    orderstring: Gladiator / Fortune
   - name: Gladiator
     type: Action - Split Cards
-    shortId: Gladiator / Fortune step 1
+    orderstring: Gladiator / Fortune step 1
     cost:
       treasure: 3
   - name: Fortune
     type: Treasure - Split Cards
-    shortId: Gladiator / Fortune step 2
+    orderstring: Gladiator / Fortune step 2
     cost:
       treasure: 8
       debt: 8

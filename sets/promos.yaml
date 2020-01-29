@@ -181,15 +181,15 @@ events:
 othercards:
   - name: Sauna / Avanto
     type: Action - Split Cards
-    shortId: Sauna / Avanto
+    orderstring: Sauna / Avanto
   - name: Sauna
     type: Action - Split Cards
-    shortId: Sauna / Avanto step 1
+    orderstring: Sauna / Avanto step 1
     cost:
       treasure: 4
   - name: Avanto
     type: Action - Split Cards
-    shortId: Sauna / Avanto step 2
+    orderstring: Sauna / Avanto step 2
     cost:
       treasure: 5
 

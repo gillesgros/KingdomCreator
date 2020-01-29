@@ -93,7 +93,7 @@ export default class PresetSetcards extends Vue {
   }
 
   getCards(cardIds: SupplyCard[]) {
-    return SupplyCardSorter.sort(cardIds, SortOption.SHORTALPHA);
+    return SupplyCardSorter.sort(cardIds, SortOption.ORDERSTRING);
   }
   
   OtherCards(typeRequested : string) {

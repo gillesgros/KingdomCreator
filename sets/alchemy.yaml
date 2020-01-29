@@ -141,7 +141,6 @@ cards:
 othercards:
   - name: Potion
     type: Basic Cards
-    isTreasure: true
     cost:
       treasure: 4
       potion: 0

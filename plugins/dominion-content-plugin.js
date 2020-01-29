@@ -34,8 +34,8 @@ module.exports = class DominionContentPlugin {
       var set = sets[setId];
       for (var i = 0; i < set.cards.length; i++) {
         var card = set.cards[i];
-        card.id = this.convertToCardId(setId, card.id, card.name);
-        card.shortId = this.tokenizeShortId(card.shortId, card.name);
+        card.id = this.convertToCardId(setId, card.name);
+        card.shortId = this.tokenize(card.name);
         card.setId = setId;
       }
 
@@ -74,8 +74,8 @@ module.exports = class DominionContentPlugin {
       if (set.othercards) {
         for (var i = 0; i < set.othercards.length; i++) {
           var card = set.othercards[i];
-          card.id = this.convertToCardId(setId, card.id, card.name);
-          card.shortId = this.tokenizeShortId(card.shortId, card.name);
+          card.id = this.convertToCardId(setId, card.name);
+          card.shortId = this.tokenize(card.name);
           card.setId = setId;
         }
       }
@@ -115,13 +115,10 @@ module.exports = class DominionContentPlugin {
     return setId + '_boon_' + this.tokenize(name);
   }
 
-  static convertToCardId(setId, id, name) {
-    return (id == undefined) ? setId + '_' + this.tokenize(name) : id;
+  static convertToCardId(setId, name) {
+    return setId + '_' + this.tokenize(name);
   }
   
-  static tokenizeShortId(shortId, name) {
-    return (shortId == undefined) ? this.tokenize(name) : shortId;
-  }
 
   static tokenize(str) {
     return str.replace(/[\s'-\/]/g, '').toLowerCase();

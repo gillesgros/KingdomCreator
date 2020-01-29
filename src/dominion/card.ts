@@ -5,4 +5,5 @@ export interface Card {
   readonly shortId: string;
   readonly setId: SetId;
   readonly name: string;
+  readonly orderstring: string;
 }

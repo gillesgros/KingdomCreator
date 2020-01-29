@@ -10,6 +10,7 @@ export class SupplyCard implements Card {
     readonly shortId: string,
     readonly setId: SetId,
     readonly name: string,
+    readonly orderstring: string,
     readonly cost: Cost,
     readonly isAction: boolean,
     readonly isActionSupplier: boolean,
@@ -23,6 +24,10 @@ export class SupplyCard implements Card {
     readonly isNight: boolean,
     readonly isReaction: boolean,
     readonly isReserve: boolean,
+    readonly isGathering: boolean,
+    readonly isTerminal: boolean,
+    readonly isArtifactSupplier: boolean,
+    readonly isVillageSupplier: boolean,
     readonly isTrashing: boolean,
     readonly isTraveller: boolean,
     readonly isTreasure: boolean,
@@ -55,6 +60,16 @@ export class SupplyCard implements Card {
         return this.isReaction;
       case CardType.RESERVE:
         return this.isReserve;
+
+      case CardType.GATHERING:
+        return this.isGathering;
+      case CardType.TERMINAL:
+        return this.isTerminal;
+      case CardType.ARTIFACT_SUPPLIER:
+        return this.isArtifactSupplier;
+      case CardType.VILLAGE_SUPPLIER:
+        return this.isVillageSupplier;
+
       case CardType.TRASHING:
         return this.isTrashing;
       case CardType.TRAVELLER:
@@ -74,6 +89,7 @@ export class SupplyCard implements Card {
       json["shortId"],
       json["setId"],
       json["name"],
+      json["orderstring"] || "",
       Cost.fromJson(json["cost"]),
       json["isAction"] || false,
       json["isActionSupplier"] || false,
@@ -87,6 +103,12 @@ export class SupplyCard implements Card {
       json["isNight"] || false,
       json["isReaction"] || false,
       json["isReserve"] || false,
+
+      json["isGathering"] || false,
+      json["isTerminal"] || false,
+      json["isArtifactSupplier"] || false,
+      json["isVillageSupplier"] || false,
+
       json["isTrashing"] || false,
       json["isTraveller"] || false,
       json["isTreasure"] || false,

@@ -440,42 +440,42 @@ othercards:
       treasure: 1
     
   - name: Dame Anna
-    type: Action - Attack - Knights
+    type: Action - Attack - Knight
     cost:
       treasure: 5
   - name: Dame Josephine
-    type: Action - Attack - Victory - Knights
+    type: Action - Attack - Victory - Knight
     cost:
       treasure: 5
   - name: Dame Molly
-    type: Action - Attack - Knights
+    type: Action - Attack - Knight
     cost:
       treasure: 5
   - name: Dame Natalie
-    type: Action - Attack - Knights
+    type: Action - Attack - Knight
     cost:
       treasure: 5
   - name: Dame Sylvia
-    type: Action - Attack - Knights
+    type: Action - Attack - Knight
     cost:
       treasure: 5
   - name: Sir Bailey
-    type: Action - Attack - Knights
+    type: Action - Attack - Knight
     cost:
       treasure: 5
   - name: Sir Destry
-    type: Action - Attack - Knights
+    type: Action - Attack - Knight
     cost:
       treasure: 5
   - name: Sir Martin
-    type: Action - Attack - Knights
+    type: Action - Attack - Knight
     cost:
       treasure: 4
   - name: Sir Michael
-    type: Action - Attack - Knights
+    type: Action - Attack - Knight
     cost:
       treasure: 5
   - name: Sir Vander
-    type: Action - Attack - Knights
+    type: Action - Attack - Knight
     cost:
       treasure: 5

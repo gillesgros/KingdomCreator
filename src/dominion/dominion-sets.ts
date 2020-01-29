@@ -54,6 +54,8 @@ export class DominionSets {
   public static getCardById(cardId: string): Card {
     const card = DominionSets.cards[cardId];
     if (!card) {
+	console.log(DominionSets.cards);
+	console.log(cardId)
       throw new Error(`Unknown card id: {$cardId}`);
     }
     return card;
