@@ -164,7 +164,7 @@ cards:
     isBuySupplier: false
     isDrawer: true
     isDoom: false
-    isDuration: false
+    isDuration: true
     isFate: false
     isNight: true
     isReaction: false
@@ -471,7 +471,7 @@ cards:
     isDrawer: true
     isMultiDrawer: true
     isDoom: false
-    isDuration: false
+    isDuration: true
     isFate: false
     isNight: true
     isReaction: false
@@ -581,7 +581,7 @@ cards:
       treasure: 5
       potion: 0
       debt: 0
-    isAction: true
+    isAction: false
     isActionSupplier: false
     isAttack: true
     isBuySupplier: false

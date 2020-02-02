@@ -1,8 +1,8 @@
 import Vue from "vue";
 import PageComponent, { MenuItemType } from "./components/page.vue";
 import CardOnlinePageComponent from "./components/card-online-page.vue";
-import CardOnlineOthercardStandardPageComponent from "./components/card-online-othercard-standard-page.vue";
-import CardOnlineOthercardSpecialPageComponent from "./components/card-online-othercard-special-page.vue";
+import CardOnlinePageLandscapeComponent from "./components/card-online-page-landscape.vue";
+import CardOnlinePageOthercardComponent from "./components/card-online-page-othercard.vue";
 
 import { initializeWindowListener } from "./stores/setup";
 import { store } from "./stores/pages-store";
@@ -19,8 +19,8 @@ new Vue({
   <div>
   <page-component :subtitle="subtitle" :selectedType="selectedType">
        <card-online-page-component v-if="true"/>
-       <card-online-othercard-standard-page-component v-if="false"/>
-	   <card-online-othercard-special-page-component v-if="false"/>
+       <card-online-page-othercard-component v-if="false"/>
+	   <card-online-page-landscape-component v-if="false"/>
   </page-component>
 
   </div>
@@ -34,8 +34,8 @@ new Vue({
   components: {
     "page-component": PageComponent,
     "card-online-page-component": CardOnlinePageComponent,
-    "card-online-othercard-standard-page-component": CardOnlineOthercardStandardPageComponent,
-    "card-online-othercard-special-page-component": CardOnlineOthercardSpecialPageComponent
+    "card-online-page-landscape-component": CardOnlinePageLandscapeComponent,
+    "card-online-page-othercard-component": CardOnlinePageOthercardComponent
   }
 });
 

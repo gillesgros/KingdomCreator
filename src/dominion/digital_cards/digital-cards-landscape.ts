@@ -1,5 +1,9 @@
-import { DigitalCard } from "./digital-cards-type"		
-export const Cards_list:DigitalCard[]= [		
+import { DigitalCard } from "./digital-cards-type"
+
+let Temp_CardsList:DigitalCard[] = [];
+
+  const Cards_list_adventures:DigitalCard[]= [
+  
   /* landscape */	{	id: "alms",  frenchName: "Aumône",  artwork: "http://wiki.dominionstrategy.com/images/a/ab/AlmsArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="line-height:26px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Une fois par tour: si vous n\'avez pas de carte Trésor</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">en jeu, recevez une carte coûtant jusqu\'à      .</div></div><br></div><div class="card-text-coin-icon" style="transform:scale(0.2); top:33px; display: inline;left:370px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">4</div></div></div></div>'
   /* landscape */	},	
@@ -60,6 +64,11 @@ export const Cards_list:DigitalCard[]= [
   /* landscape */	{	id: "training",  frenchName: "Entraînement",  artwork: "http://wiki.dominionstrategy.com/images/3/34/TrainingArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="position:relative; top:8px;"><div style="line-height:16px;"><div style="display:inline;"><div style="display:inline; font-size:16px;">Placez votre jeton +      sur une pile de cartes Action de la réserve.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:16px;">(Quand vous jouez une carte de cette pile, obtenez d\'abord +      .)</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.16); top:10px; display: inline;left:137px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div><div class="card-text-coin-icon" style="transform:scale(0.16); top:30px; display: inline;left:397px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div></div>'
   /* landscape */	},	
+  /* landscape */];		
+  
+  
+  const Cards_list_empires:DigitalCard[]= [		
+  
   /* landscape */	{	id: "triumph",  frenchName: "Triomphe",  artwork: "http://wiki.dominionstrategy.com/images/9/9d/TriumphArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="display:inline;"><div style="display:inline; font-size:21px;">Recevez un Domaine. Dans ce cas,</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">          par carte que vous avez reçue à ce tour.</div></div><br><div class="card-text-vp-icon-container" style="display:inline; transform:scale(0.18); top:37px;left:58px;"><div class="card-text-vp-text-container"><div class="card-text-vp-text" style="top:8px;">+1</div></div><div class="card-text-vp-icon"></div></div></div>'
   /* landscape */	},	
@@ -162,6 +171,10 @@ export const Cards_list:DigitalCard[]= [
   /* landscape */	{	id: "wolfden",  frenchName: "Tanière des loups",  artwork: "http://wiki.dominionstrategy.com/images/0/09/Wolf_DenArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Pour le décompte,         <div class="card-text-vp-icon-container" style="display:inline; transform:scale(0.18); top:8px;left:195px;"><div class="card-text-vp-text-container"><div class="card-text-vp-text" style="top:8px;">-3</div></div><div class="card-text-vp-icon"></div></div>par carte dont vous avez</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">exactement un exemplaire.</div></div><br></div>'
   /* landscape */	},	
+  /* landscape */];		
+  
+  const Cards_list_nocturne:DigitalCard[]= [		
+  
   /* landscape */	{	id: "theearthsgift",  frenchName: "Don de la terre",  artwork: "http://wiki.dominionstrategy.com/images/3/32/Salt_the_EarthArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="line-height:26px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Vous pouvez défausser une carte Trésor</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">pour recevoir une carte coûtant jusqu\'à      .</div></div><br></div><div class="card-text-coin-icon" style="transform:scale(0.2); top:33px; display: inline;left:363px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">4</div></div></div></div>'
   /* landscape */	},	
@@ -249,6 +262,10 @@ export const Cards_list:DigitalCard[]= [
   /* landscape */	{	id: "lostinthewoods",  frenchName: "Perdu dans les bois",  artwork: "http://wiki.dominionstrategy.com/images/f/fb/Lost_in_the_WoodsArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">Au début de votre tour, vous pouvez</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">défausser une carte pour appliquer une Aubaine.</div></div><br></div>'
   /* landscape */	},	
+  /* landscape */];		
+  
+  const Cards_list_renaissance:DigitalCard[]= [		
+  
   /* landscape */	{	id: "citygate",  frenchName: "Porte ",  artwork: "http://wiki.dominionstrategy.com/images/e/e2/City_GateArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="position:relative; top:10px;"><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">Au début de votre tour, <div style="display: inline; font-weight: bold;">+1 Carte</div>, puis replacez</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">une carte de votre main sur votre pioche.</div></div><br></div></div></div>'
   /* landscape */	},	
@@ -315,5 +332,14 @@ export const Cards_list:DigitalCard[]= [
   /* landscape */	{	id: "key",  frenchName: "clé",  artwork: "http://wiki.dominionstrategy.com/images/a/a2/KeyArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:14px;"><div style="position:relative; top:10px;"><div style="line-height:26px;"><div style="display:inline;"><div style="display:inline; font-size:26px;">Au début de votre tour, <div style="display: inline; font-weight: bold;">+</div>      .</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.24); top:10px; display: inline;left:332px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div></div>'
   /* landscape */	},	
-
   /* landscape */];		
+
+
+Temp_CardsList = Temp_CardsList.concat(
+	Cards_list_adventures, 
+	Cards_list_empires,
+	Cards_list_nocturne,
+	Cards_list_renaissance,
+	);
+	
+export const Cards_list:DigitalCard[]= Temp_CardsList

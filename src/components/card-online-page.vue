@@ -143,6 +143,9 @@ export default class CardOnlinePageComponent extends Vue {
       if (card.isOfType(CardType.DURATION)) {
         return "v-for card-theme-title-dark card-theme-text-light";
       }
+      if (card.isOfType(CardType.ATTACK) && card.isOfType(CardType.ACTION)) {
+        return "v-for card-theme-title-dark card-theme-text-light";
+      }
       return "v-for card-theme-title-light card-theme-text-light";
     }
     return "v-for card-theme-title-dark card-theme-text-dark";
@@ -160,9 +163,18 @@ export default class CardOnlinePageComponent extends Vue {
 
       card = card as SupplyCard;
       if (card.isOfType(CardType.GATHERING)) { extension= " - Collecte"; }
+      if (card.isOfType(CardType.FATE))      { extension= " - Destin"; }
+      if (card.isOfType(CardType.DOOM))      { extension= " - Fatalité"; }
+
 
       if (card.isOfType(CardType.NIGHT)) {
         if (card.isOfType(CardType.DURATION)) { return {png: "night-duration", label: "Nuit - Durée" + extension}; }
+        if (card.isOfType(CardType.ATTACK)) { 
+          if (card.isOfType(CardType.DOOM)) { 
+            if (card.isOfType(CardType.ACTION)) { return {png: "action-night", label: "Action - Nuit - Attaque" + extension}; }
+            return {png: "night", label: "Nuit - Attaque" + extension};
+          }
+        }
         return {png: "night", label: "Nuit" + extension};
       }
       if (card.isOfType(CardType.ACTION)) {
@@ -174,7 +186,7 @@ export default class CardOnlinePageComponent extends Vue {
           return {png : "action-duration", label: "Action - Durée" + extension};
         }
         if (card.isOfType(CardType.RESERVE)) {
-          if (card.isOfType(CardType.VICTORY)) { return {png: "actin-reserve-victory", label: "Action - Réserve- Victoire" + extension}; }
+          if (card.isOfType(CardType.VICTORY)) { return {png: "action-reserve-victory", label: "Action - Réserve- Victoire" + extension}; }
           return {png: "action-reserve", label: "Action - Réserve" + extension};
         }
         if (card.isOfType(CardType.NIGHT)) { return {png: "action-night", label: "Action - Nuit" + extension}; }
@@ -206,7 +218,7 @@ export default class CardOnlinePageComponent extends Vue {
       if (card.type.includes("Spirit"))    { extension= " - Esprit";         }
       if (card.type.includes("Zombie"))    { extension= " - Zombie";         }
       if (card.type.includes("Knight"))    { extension= " - Chevalier";      }
-      if (card.type.includes("Castle"))   { extension= " - Château";      }
+      if (card.type.includes("Castle"))    { extension= " - Château";        }
 
       if (card.type.includes("Ruins")) {
         return {png: "action-ruins", label: "Action - Ruines" + extension};
@@ -230,7 +242,7 @@ export default class CardOnlinePageComponent extends Vue {
           return {png : "action-duration", label: "Action - Durée" + extension};
         }
         if (card.type.includes(CardType.RESERVE.slice(2))) {
-          if (card.type.includes(CardType.VICTORY.slice(2))) { return {png: "actin-reserve-victory", label: "Action - Réserve- Victoire" + extension}; }
+          if (card.type.includes(CardType.VICTORY.slice(2))) { return {png: "action-reserve-victory", label: "Action - Réserve- Victoire" + extension}; }
           return {png: "action-reserve", label: "Action - Réserve" + extension};
         }
         if (card.type.includes(CardType.NIGHT.slice(2))) { return {png: "action-night", label: "Action - Nuit" + extension}; }
@@ -310,7 +322,7 @@ export default class CardOnlinePageComponent extends Vue {
     if (card.constructor.name == "SupplyCard") {
       card = card as SupplyCard;
       return card.cost;
-    }
+    }	
     if (card.constructor.name == "OtherCard") {
       card = card as OtherCard;
       return card.cost;
@@ -323,12 +335,15 @@ export default class CardOnlinePageComponent extends Vue {
   getCardNameFontSize(currentCard: DigitalCard) {
     let isTreasure = this.getisTreasureCard(currentCard);
     if (isTreasure) {
+      if ((currentCard.frenchName)=="Contrebande" ) { return {top: 19, fontsize: 1.45}; }
+      if ((currentCard.frenchName)=="Entreprise risquée" ) { return {top: 22, fontsize: 1.05}; }
       if ((currentCard.frenchName).length >=17 ) { return {top: 22, fontsize: 0.97}; } /* 17 Corne d'abondance 19 pierre philosophale */
       if ((currentCard.frenchName).length >=12 ) { return {top: 20, fontsize: 1.2}; } /* 12  Chef-d'œuvre 15 */
       if ((currentCard.frenchName).length >=8  ) { return {top: 18, fontsize: 1.5}; } /* 8 Talisman 11 Contrebande*/
                                                    return {top: 16, fontsize: 1.8}; /* >= 6 Banque */
       if ((currentCard.frenchName).length >=18 ) { return {top: 21, fontsize: 1.08}; } /* 18 */
       if ((currentCard.frenchName).length >=16 ) { return {top: 20, fontsize: 1.16}; } /* 16 */
+	  
     }
     if ((currentCard.frenchName).length >= 25 ) { return {top: 20, fontsize: 1.1}; }
     if ((currentCard.frenchName).length >= 17 ) { return {top: 19, fontsize: 1.2}; }
