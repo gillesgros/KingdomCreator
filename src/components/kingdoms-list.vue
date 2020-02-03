@@ -41,9 +41,9 @@ export default class KingdomsList extends Vue {
     const setId = (this.$store.state as State).selectedKDSetId;
     if (setId === ("All" as SetId)) {
       return DominionKingdoms.getAllKingdoms();
-    } else {
-    return DominionKingdoms.kingdoms[setId]; 
     }
+    if (!(setId in DominionKingdoms.kingdoms)) { return []; }
+    return DominionKingdoms.kingdoms[setId] 
   }
   
   get nbKingdomRecommmendedSet() {
