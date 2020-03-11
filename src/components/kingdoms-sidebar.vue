@@ -26,8 +26,12 @@
             <span>Personal sets</span>
           </label>
           <div class="js input-file-container"  v-show="show_PersonalFileSelection_Div">
-            <input type="file" id="fileInput" class="input-file"  
-                  @change="SelectFile($event)" v-show="show_PersonalFileSelection_Input"/>
+            <input type="file" class="input-file"
+                  id="fileInput" ref="fileInput"
+                  onclick="this.value=null;" 
+                  @change="SelectFile($event)" 
+                  accept=".yaml"  
+                  v-show="show_PersonalFileSelection_Input"/>
             <label id="my-file-label-trigger" for="fileInput" class="input-file-trigger" v-show="show_PersonalFileSelection_Input"
                   tabindex="0">Select a file...</label>
             <div id="div-file-return" class="file-return" style="background-color=blue">{{file_name}}</div>
@@ -89,6 +93,10 @@ export default class KigndomSidebar extends Vue {
   }
   
   get show_PersonalFileSelection_Div() {
+    if (((this.selectedKDSetId as string) == "Personal") && (this.file_name == "")) {
+      this.show_PersonalFileSelection_Input = true;
+      return true;
+    }
     if (this.show_PersonalFileSelection_Input) { return true; }
     if (this.file_name != "") { return true; }
     return false;
@@ -105,7 +113,6 @@ export default class KigndomSidebar extends Vue {
           let kingdoms_object = Yaml_Parsing((reader.result as string)); 
           let kingdoms = Object.keys(kingdoms_object).map((key) => { return kingdoms_object[key] })
           let sets = kingdoms[0].map((json: any) => DominionKingdom.fromJson(json));
-
           DominionKingdoms.kingdoms[("Personal" as SetId)] = sets;
           /* to  request update of kigndom-list */
           this.selectedKDSetId=("personal" as SetId);

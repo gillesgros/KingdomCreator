@@ -2,16 +2,15 @@
   <div>
     <div>
       <span> {{ nbKingdomRecommmendedSet }} Recommended Kingdoms Sets </span>
-          <div  class="preset-set_title">
-            <div class="preset-kingdom_title_sets" v-for="kingdom in kingdoms" v-show="toshow(kingdom)">
-              <a style="text-decoration: none"  :href="'#' + kingdom.name">
-                <span 
-              class="preset-kingdom_set-name"  :class="kingdom.setIds[0]">{{kingdom.name}}</span>
-              </a>
-            </div>
-          </div>
+      <div  class="preset-set_title">  
+        <div class="preset-kingdom_title_sets" v-for="kingdom in kingdoms" v-show="toshow(kingdom)">
+          <a style="text-decoration: none"  :href="'#' + kingdom.name">
+            <span class="preset-kingdom_set-name"  :class="kingdom.setIds[0]">{{kingdom.name}}</span>
+          </a>
         </div>
-        <preset-kingdom-component v-for="kingdom in kingdoms" :key="kingdom.name" :kingdom="kingdom" v-show="toshow(kingdom)"/>
+      </div>
+    </div>
+    <preset-kingdom-component v-for="kingdom in kingdoms" :key="kingdom.name" :kingdom="kingdom" v-show="toshow(kingdom)"/>
   </div>
 </template>
 
@@ -36,14 +35,15 @@ export default class KingdomsList extends Vue {
   }
 
   ListSet:SetId[]=[];
+
   get kingdoms() {
     this.$store.commit(UPDATE_SELECTED_KDSET, this.$storage.get("selectedKDSetId", SetId.BASE_SET));
     const setId = (this.$store.state as State).selectedKDSetId;
-    if (setId === ("All" as SetId)) {
-      return DominionKingdoms.getAllKingdoms();
-    }
-    if (!(setId in DominionKingdoms.kingdoms)) { return []; }
-    return DominionKingdoms.kingdoms[setId] 
+      if (setId === ("All" as SetId)) {
+        return DominionKingdoms.getAllKingdoms();
+      }
+      if (!(setId in DominionKingdoms.kingdoms)) { return []; }
+      return DominionKingdoms.kingdoms[setId] 
   }
   
   get nbKingdomRecommmendedSet() {

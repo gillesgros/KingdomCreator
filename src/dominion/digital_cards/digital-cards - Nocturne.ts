@@ -23,8 +23,19 @@ export const Cards_list_Nocturne:DigitalCard[]= [
     		text_html: '<div class="card-text" style="top:5px;"><div style="line-height:18px;"><div style="display:inline;"><div style="display:inline; font-size:18px;">Écartez cette carte. Recevez un</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">exemplaire d\'une carte que vous</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">avez en jeu.</div></div><br></div><div class="horizontal-line" style="width:200px; height:3px;margin-top:8px;"></div><div style="position:relative; top:3px;"><div style="line-height:18px;"><div style="display:inline;"><div style="display:inline; font-size:18px;">Si le Changelin est dans le royaume,</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">lorsque vous recevez une carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">coûtant      ou plus, vous pouvez</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">l\'échanger contre un Changelin.</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.18); top:126px; display: inline;left:80px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">3</div></div></div></div>'
     	},	
     	{	id: "fool",  frenchName: "Benet",  artwork: "http://wiki.dominionstrategy.com/images/e/e3/FoolArt.jpg",
-    		text_html: ''
+    		text_html: '<div class="card-text" style="top:20px;"><div style="position:relative; top:10px;">'+
+'<div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">Si vous n\'avez pas Perdu dans</div></div><br>'+
+'<div style="display:inline;"><div style="display:inline; font-size:22px;">les bois, prenez-le, prenez 3</div></div><br>'+
+'<div style="display:inline;"><div style="display:inline; font-size:22px;">Aubaines, et appliquez-les</div></div><br>'+
+'<div style="display:inline;"><div style="display:inline; font-size:22px;"> dans l\'ordre de votre choix.</div></div><br>'+
+'</div></div>'+
+'<div class="card-text" style="position:absolute; top:135px;"><div style="line-height:19px;">'+
+'<div style="display:inline;"><div style="display:inline; font-size:21px;"><div style="display: inline; font-style: italic;">(Patrimoine : Or maudit)</div></div></div><br>'+
+'</div></div>'+
+
+'</div>'
     	},	
+
     	{	id: "ghosttown",  frenchName: "Ville fantôme",  artwork: "http://wiki.dominionstrategy.com/images/e/ed/Ghost_TownArt.jpg",
     		text_html: '<div class="card-text" style="top:29px;"><div style="position:relative; top:0px;"><div style="line-height:25px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">Au début de votre prochain</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">tour : <div style="display: inline; font-weight: bold;">+1 Carte </div>et <div style="display: inline; font-weight: bold;">+1 Action</div>.</div></div><br></div></div><div class="horizontal-line" style="width:200px; height:3px;margin-top:18px;"></div><div style="position:relative; top:5px;"><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Cette carte est reçue en main</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">(et non dans la défausse).</div></div><br></div></div></div>'
     	},	
@@ -54,6 +65,10 @@ export const Cards_list_Nocturne:DigitalCard[]= [
 
 	'</div>'
     	},	
+		
+		
+		
+		
     	{	id: "conclave",  frenchName: "Conclave",  artwork: "http://wiki.dominionstrategy.com/images/f/fc/ConclaveArt.jpg",
     		text_html: '<div class="card-text" style="top:20px;"><div style="position: relative; left:-5px;top:-5px;"><div style="font-weight: bold;"><div style="display:inline;">+</div><br></div></div><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:19px;">Vous pouvez jouer une carte Action</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">de votre main dont vous n\'avez pas</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">d\'exemplaire en jeu. Dans ce cas,</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;"><div style="display: inline; font-weight: bold;">+1 Action.</div></div></div><br></div><div class="card-text-coin-icon" style="transform:scale(0.22); top:-5px; display: inline;left:148px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">2</div></div></div></div>'
     	},	
@@ -63,9 +78,10 @@ export const Cards_list_Nocturne:DigitalCard[]= [
     	{	id: "exorcist",  frenchName: "Exorciste",  artwork: "http://wiki.dominionstrategy.com/images/4/44/ExorcistArt.jpg",
     		text_html: '<div class="card-text" style="top:29px;"><div style="position:relative; top:0px;"><div style="line-height:23px;"><div style="display:inline;"><div style="display:inline; font-size:22.5px;">Écartez une carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22.5px;">de votre main.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22.5px;">Recevez un Esprit moins cher</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22.5px;">de l\'une des piles Esprit.</div></div><br></div></div></div>'
     	},	
-    	{	id: "necromancer",  frenchName: "Nécromancine",  artwork: "http://wiki.dominionstrategy.com/images/b/b4/NecromancerArt.jpg",
-    		text_html: '<div class="card-text" style="top:10px;"><div style="position:relative; top:5px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:19px;">Jouez une carte Action non-Durée</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">face visible du rebut, en la laissant</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">en place et en la retournant face</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">cachée jusqu\'à la fin du tour.</div></div><br></div></div><div style="position:relative; top:15px;"><div style="line-height:20px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Mise en place : placez les 3</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">Zombies dans le rebut.</div></div><br></div></div><div class="horizontal-line" style="width:200px; height:2px;margin-top:-35px;"></div></div>'
+    	{	id: "necromancer",  frenchName: "Nécromancien",  artwork: "http://wiki.dominionstrategy.com/images/b/b4/NecromancerArt.jpg",
+    		text_html: '<div class="card-text" style="top:12px;"><div style="position:relative; top:5px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:19px;">  Jouez une carte Action non-Durée</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">face visible du rebut, en la laissant</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">en place et en la retournant face</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">cachée jusqu\'à la fin du tour.</div></div><br></div></div><div style="position:relative; top:15px;"><div style="line-height:20px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Mise en place : placez les 3</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">Zombies dans le rebut.</div></div><br></div></div><div class="horizontal-line" style="width:200px; height:2px;margin-top:-35px;"></div></div>'
     	},	
+
     	{	id: "shepherd",  frenchName: "Berger",  artwork: "http://wiki.dominionstrategy.com/images/d/da/ShepherdArt.jpg",
     		text_html: '<div class="card-text" style="top:20px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Action</div></div><br></div></div><div style="position:relative; top:5px;"><div style="line-height:20px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Défaussez en les dévoilant autant</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">de cartes Victoire que souhaité.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;"><div style="display: inline; font-weight: bold;">+2 Cartes</div> par carte défaussée.</div></div><br></div></div><div class="card-text" style="position:absolute; top:135px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:20px;"><div style="display: inline; font-style: italic;">(Patrimoine : Pâturage)</div></div></div><br></div></div></div>'
     	},	
@@ -88,7 +104,15 @@ export const Cards_list_Nocturne:DigitalCard[]= [
     		text_html: '<div class="card-text" style="top:20px;"><div style="position: relative; left:-35px;top:-15px;"><div class="card-text-coin-icon" style="transform:scale(0.5); top:0px; display: inline;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">2</div></div></div></div><div style="position:relative; top:45px;"><div style="line-height:18px;"><div style="display:inline;"><div style="display:inline; font-size:18px;">Après avoir joué cette carte, si vous</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">avez un nombre impair d\'Idoles en jeu,</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">appliquez une Aubaine ; si vous en</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">avez un nombre pair, tous vos adver-</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">saires reçoivent une Malédiction.</div></div><br></div></div></div>'
     	},	
     	{	id: "pooka",  frenchName: "Pooka",  artwork: "http://wiki.dominionstrategy.com/images/7/78/PookaArt.jpg",
-    		text_html: '<div class="card-text" style="top:29px;"><div style="position:relative; top:10px;"><div style="line-height:21px;"><div style="display:inline;"><div style="display:inline; font-size:21px;">Vous pouvez écarter une carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">Trésor de votre main autre qu\'un</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">Or maudit pour <div style="display: inline; font-weight: bold;">+4 Cartes</div>.</div></div><br></div></div><div class="card-text" style="position:absolute; top:126px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:21px;"><div style="display: inline; font-style: italic;">(Patrimoine : Or maudit)</div></div></div><br></div></div></div>'
+    		text_html: '<div class="card-text" style="top:29px;"><div style="position:relative; top:10px;"><div style="line-height:21px;">'+
+'<div style="display:inline;"><div style="display:inline; font-size:21px;">Vous pouvez écarter une carte</div></div><br>'+
+'<div style="display:inline;"><div style="display:inline; font-size:21px;">Trésor de votre main autre qu\'un</div></div><br>'+
+'<div style="display:inline;"><div style="display:inline; font-size:21px;">Or maudit pour <div style="display: inline; font-weight: bold;">+4 Cartes</div>.</div></div><br>'+
+'</div></div>'+
+'<div class="card-text" style="position:absolute; top:126px;"><div style="line-height:19px;">'+
+'<div style="display:inline;"><div style="display:inline; font-size:21px;"><div style="display: inline; font-style: italic;">(Patrimoine : Or maudit)</div></div></div><br>'+
+'</div></div>'+
+'</div>'
     	},	
     	{	id: "sacredgrove",  frenchName: "Bois sacré",  artwork: "http://wiki.dominionstrategy.com/images/a/a2/Sacred_GroveArt.jpg",
     		text_html: '<div class="card-text" style="top:20px;"><div style="position:relative; top:-5px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Achat</div></div><br><div style="display:inline;"><div style="display:inline; font-size:28px;"><div style="position: relative; left:-12px;top:1px;">+</div></div></div><br></div></div></div><div style="position:relative; top:-30px;"><div style="line-height:21px;"><div style="display:inline;"><div style="display:inline; font-size:21px;">Appliquez une Aubaine. Si elle</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">ne donne pas +      , tous vos</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">adversaires peuvent l\'appliquer.</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.21); top:25px; display: inline;left:140px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">3</div></div></div><div class="card-text-coin-icon" style="transform:scale(0.21); top:80px; display: inline;left:150px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div></div>'
@@ -108,46 +132,67 @@ export const Cards_list_Nocturne:DigitalCard[]= [
     	{	id: "raider",  frenchName: "Razzia",  artwork: "http://wiki.dominionstrategy.com/images/c/cc/RaiderArt.jpg",
     		text_html: '<div class="card-text" style="top:10px;"><div style="position:relative; top:15px;"><div style="line-height:20px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Tous vos adversaires ayant au</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">moins 5 cartes en main défaussent</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">un exemplaire d\'une carte que vous</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">avez en jeu (ou montrent qu\'ils ne</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;"> peuvent pas). Au début de votre</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">prochain tour, +       .</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.2); top:133px; display: inline;left:190px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">3</div></div></div></div>'
     	},	
-    		
-    		
-    		
-    		
-    		
-    		
-    		
-    		
-    		
     	{	id: "pasture",  frenchName: "Pâturage",  artwork: "http://wiki.dominionstrategy.com/images/9/9e/PastureArt.jpg",
     		text_html: '<div class="card-text" style="top:55px;"><div class="horizontal-line" style="width:200px; height:3px;margin-top:47px;"></div><div style="position:relative; top:12px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:19px;">Vaut        par Domaine</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">que vous avez.</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.53); top:-35px; display: inline;left:110px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div><div class="card-text-vp-icon-container" style="display:inline; transform:scale(0.18); top:64px;left:106px;"><div class="card-text-vp-text-container"><div class="card-text-vp-text" style="top:8px;">1</div></div><div class="card-text-vp-icon"></div></div></div>'
     	},	
     	{	id: "pouch",  frenchName: "Pochette",  artwork: "http://wiki.dominionstrategy.com/images/5/52/PouchArt.jpg",
     		text_html: '<div class="card-text" style="top:73px;"><div style="position: relative; left:-35px;top:-40px;"><div class="card-text-coin-icon" style="transform:scale(0.5); top:0px; display: inline;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div></div><div style="position:relative; top:35px;"><div style="font-weight: bold;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:23px;">+1 Achat</div></div><br></div></div></div></div>'
     	},	
-    		
-    		
-    		
   /* t */	{	id: "luckycoin",  frenchName: "Porte-bonheur",  artwork: "http://wiki.dominionstrategy.com/images/f/fa/Lucky_CoinArt.jpg",
   /* t */		text_html: '<div class="card-text" style="top:55px;"><div style="position: relative; left:-35px;top:-30px;"><div class="card-text-coin-icon" style="transform:scale(0.5); top:0px; display: inline;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div></div><div style="position:relative; top:40px;"><div style="line-height:20px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">Quand vous jouez cette carte,</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">recevez un Argent.</div></div><br></div></div></div>'
   /* t */	},	
     	{	id: "willowisp",  frenchName: "Feux follet",  artwork: "http://wiki.dominionstrategy.com/images/b/bf/Will-o%27-WispArt.jpg",
-    		text_html: '<div class="card-text" style="top:10px;"><div style="position:relative; top:0px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Action</div></div><br></div></div></div><div style="position:relative; top:5px;"><div style="line-height:21px;"><div style="display:inline;"><div style="display:inline; font-size:21px;">Dévoilez la carte du haut de</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">votre pioche. Si elle coûte      </div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">ou moins, prenez-la en main.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;"><div style="display: inline; font-style: italic;">(Ne fait pas partie de la réserve.)</div></div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.21); top:89px; display: inline;left:242px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">2</div></div></div></div>'
+    		text_html: '<div class="card-text" style="top:10px;"><div style="position:relative; top:0px;">'+
+'<div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Carte</div></div><br>'+
+'<div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Action</div></div><br>'+
+'</div></div></div><div style="position:relative; top:5px;"><div style="line-height:21px;">'+
+'<div style="display:inline;"><div style="display:inline; font-size:21px;">Dévoilez la carte du haut de</div></div><br>'+
+'<div style="display:inline;"><div style="display:inline; font-size:21px;">votre pioche. Si elle coûte      </div></div><br>'+
+'<div style="display:inline;"><div style="display:inline; font-size:21px;">ou moins, prenez-la en main.</div></div><br>'+
+'</div></div>'+
+'<div class="card-text-coin-icon" style="transform:scale(0.21); top:89px; display: inline;left:242px;">'+
+'<div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">2</div></div></div>'+
+
+'<div class="card-text" style="position:absolute; top:135px;"><div style="line-height:19px;">'+
+'<div style="display:inline;"><div style="display:inline; font-size:19px;"><div style="display: inline; font-style: italic;">(Ne fait pas partie de la réserve.)</div></div></div><br>'+
+'</div></div>'+
+'</div>'
     	},	
     	{	id: "wish",  frenchName: "Vœu",  artwork: "http://wiki.dominionstrategy.com/images/4/4d/WishArt.jpg",
-    		text_html: '<div class="card-text" style="top:20px;"><div style="position:relative; top:0px;"><div style="font-weight: bold;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Action</div></div><br></div></div><div style="position:relative; top:15px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:19px;">Retournez cette carte sur sa pile.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">Dans ce cas, recevez en main une</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">carte coûtant jusqu\'à      .</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;"><div style="display: inline; font-style: italic;">(Ne fait pas partie de la réserve.)</div></div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.19); top:92px; display: inline;left:206px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">6</div></div></div></div>'
+    		text_html: '<div class="card-text" style="top:20px;"><div style="position:relative; top:0px;">'+
+'<div style="font-weight: bold;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Action</div></div><br>'+
+'</div></div>'+
+'<div style="position:relative; top:15px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:19px;">Retournez cette carte sur sa pile.</div></div><br>'+
+'<div style="display:inline;"><div style="display:inline; font-size:19px;">Dans ce cas, recevez en main une</div></div><br>'+
+'<div style="display:inline;"><div style="display:inline; font-size:19px;">carte coûtant jusqu\'à      .</div></div><br>'+
+'</div></div>'+
+'<div class="card-text-coin-icon" style="transform:scale(0.19); top:92px; display: inline;left:206px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">6</div></div></div>'+
+'<div class="card-text" style="position:absolute; top:125px;"><div style="line-height:19px;">'+
+'<div style="display:inline;"><div style="display:inline; font-size:19px;"><div style="display: inline; font-style: italic;">(Ne fait pas partie de la réserve.)</div></div></div><br>'+
+'</div></div>'+
+'</div>'
     	},	
-    		
-    		
-    		
+
     	{	id: "imp",  frenchName: "Farfadet",  artwork: "http://wiki.dominionstrategy.com/images/2/2c/ImpArt.jpg",
-    		text_html: '<div class="card-text" style="top:20px;"><div style="position:relative; top:0px;"><div style="font-weight: bold;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+2 Cartes</div></div><br></div></div><div style="position:relative; top:15px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:19px;">Vous pouvez jouer une carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">Action de votre main dont vous</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">n\'avez pas d\'exemplaire en jeu.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;"><div style="display: inline; font-style: italic;">(Ne fait pas partie de la réserve.)</div></div></div><br></div></div></div>'
+    		text_html: '<div class="card-text" style="top:20px;"><div style="position:relative; top:0px;"><div style="font-weight: bold;">'+
+'<div style="display:inline;"><div style="display:inline; font-size:28px;">+2 Cartes</div></div><br>'+
+'</div></div><div style="position:relative; top:15px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:19px;">Vous pouvez jouer une carte</div></div><br>'+
+'<div style="display:inline;"><div style="display:inline; font-size:19px;">Action de votre main dont vous</div></div><br>'+
+'<div style="display:inline;"><div style="display:inline; font-size:19px;">n\'avez pas d\'exemplaire en jeu.</div></div><br>'+
+'</div></div>'+
+
+'<div class="card-text" style="position:absolute; top:125px;"><div style="line-height:19px;">'+
+'<div style="display:inline;"><div style="display:inline; font-size:19px;"><div style="display: inline; font-style: italic;">(Ne fait pas partie de la réserve.)</div></div></div><br>'+
+'</div></div>'+
+'</div>'
     	},	
-    	{	id: "zombieapprentice",  frenchName: "Zombie Apprenti",  artwork: "http://wiki.dominionstrategy.com/images/3/35/Zombie_ApprenticeArt.jpg",
+    	{	id: "zombieapprentice",  frenchName: "Zombie apprenti",  artwork: "http://wiki.dominionstrategy.com/images/3/35/Zombie_ApprenticeArt.jpg",
     		text_html: '<div class="card-text" style="top:47px;"><div style="position:relative; top:15px;"><div style="line-height:23px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">Vous pouvez écarter une carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">Action de votre main pour</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;"><div style="display: inline; font-weight: bold;">+3 Cartes </div>et <div style="display: inline; font-weight: bold;">+1 Action</div>.</div></div><br></div></div></div>'
     	},	
-    	{	id: "zombiemason",  frenchName: "Zombie Maçon",  artwork: "http://wiki.dominionstrategy.com/images/a/a2/Zombie_MasonArt.jpg",
+    	{	id: "zombiemason",  frenchName: "Zombie maçon",  artwork: "http://wiki.dominionstrategy.com/images/a/a2/Zombie_MasonArt.jpg",
     		text_html: '<div class="card-text" style="top:47px;"><div style="position:relative; top:10px;"><div style="line-height:20px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Écartez la carte du dessus de votre</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">pioche. Vous pouvez recevoir une</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">carte coûtant jusqu\'à       de plus.</div></div><br></div><div class="card-text-coin-icon" style="transform:scale(0.2); top:48px; display: inline;left:181px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div></div></div>'
     	},	
-    	{	id: "zombiespy",  frenchName: "Zombie Espion",  artwork: "http://wiki.dominionstrategy.com/images/7/7a/Zombie_SpyArt.jpg",
+    	{	id: "zombiespy",  frenchName: "Zombie espion",  artwork: "http://wiki.dominionstrategy.com/images/7/7a/Zombie_SpyArt.jpg",
     		text_html: '<div class="card-text" style="top:20px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Action</div></div><br></div></div><div style="position:relative; top:10px;"><div style="line-height:20px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Consultez la carte du dessus de</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">votre pioche. Défaussez-la ou </div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">replacez-la.</div></div><br></div></div></div>'
     	},	
     		

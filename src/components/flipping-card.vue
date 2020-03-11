@@ -4,8 +4,8 @@
     <div class="flip-card__content" :style="{transform: `rotateY(${rotationDegrees}deg)`}">
       <div class="flip-card__content__front" @click.stop="handleClick">
         <img class="flip-card__img" v-if="activeCard" :src="frontCardImageUrl"
-            :key="activeCard ? activeCard.id : ''"
-            @load="handleFrontImageLoaded" />
+            :key="activeCard ? activeCard.id : ''" 
+            @load="handleFrontImageLoaded" @error="incaseofError" />
         <transition name="fade">
           <div class="flip-card__front-details">
             <slot></slot>
@@ -214,6 +214,17 @@ export default class FlippingCardComponent extends Vue {
     this.cardState = cardState;
     this.animationParams.rotation = this.cardState == CardState.FRONT_VISIBLE ? 1 : 0;
   }
+  
+  incaseofError(ev:any) {
+    if (ev.target.imgUrl == undefined) {
+      let imgsrc =ev.target.src;
+      let indextoInsert = imgsrc.lastIndexOf('/');
+      console.log("error loading " + imgsrc + " - loading " +imgsrc.slice(0,indextoInsert-1)+ imgsrc.slice(indextoInsert))
+      ev.target.imgUrl = imgsrc.slice(0,indextoInsert-1)+ imgsrc.slice(indextoInsert);
+      ev.target.src = ev.target.imgUrl
+    }
+  }
+  
 }
 Vue.component("flipping-card-component", FlippingCardComponent);
 </script>

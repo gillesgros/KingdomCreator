@@ -1,6 +1,6 @@
 <template>
   <div class="static-card" :class="{isVertical: isVertical}">
-    <img class="static-card__img" :src="cardImageUrl" :key="cardImageUrl" />
+    <img class="static-card__img" :src="cardImageUrl" :key="cardImageUrl" @error="incaseofError"/>
     <slot></slot>
   </div>
 </template>
@@ -12,6 +12,17 @@ import { Vue, Component, Prop } from "vue-property-decorator";
 export default class StaticCardComponent extends Vue {
   @Prop() readonly cardImageUrl!: string | null;
   @Prop() readonly isVertical!: boolean;
+  
+  incaseofError(ev:any) {
+    if (ev.target.imgUrl == undefined) {
+      let imgsrc =ev.target.src;
+      let indextoInsert = imgsrc.lastIndexOf('/');
+      console.log("error loading " + imgsrc + " - loading " +imgsrc.slice(0,indextoInsert-1)+ imgsrc.slice(indextoInsert))
+      ev.target.imgUrl = imgsrc.slice(0,indextoInsert-1)+ imgsrc.slice(indextoInsert);
+      ev.target.src = ev.target.imgUrl
+    }
+  }
+  
 }
 Vue.component("static-card-component", StaticCardComponent);
 </script>

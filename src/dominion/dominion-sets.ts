@@ -40,11 +40,13 @@ export class DominionSets {
     for (let setId of setIds) {
       sets.push(DominionSets.sets[setId as SetId] as DominionSet);
     }
+
     return sets.sort((n1,n2) => {
       if (n1.setId > n2.setId) { return 1; }
       if (n1.setId < n2.setId) { return -1;}
       return 0;
       });
+
   }
 
   public static getSetById(setId: SetId): DominionSet {

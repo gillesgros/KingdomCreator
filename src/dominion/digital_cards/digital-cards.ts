@@ -1,6 +1,6 @@
 import { DigitalCard } from "./digital-cards-type"
 let Temp_CardsList:DigitalCard[] = [];
-
+/*
 import { Cards_list_Baseset, Cards_list_Baseset2 } from "./digital-cards - Baseset"
 Temp_CardsList = Temp_CardsList.concat(Cards_list_Baseset, Cards_list_Baseset2);
 
@@ -36,6 +36,8 @@ Temp_CardsList = Temp_CardsList.concat(Cards_list_Empires);
 
 import { Cards_list_Nocturne } from "./digital-cards - Nocturne"
 Temp_CardsList = Temp_CardsList.concat(Cards_list_Nocturne);
+*/
+
 /*
 import { Cards_list_Renaissance } from "./digital-cards - Renaissance"
 Temp_CardsList = Temp_CardsList.concat(Cards_list_Renaissance);

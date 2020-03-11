@@ -121,12 +121,12 @@ export default class PageComponent extends Vue {
   }
 
   get selectedLanguage() {
-  console.log("selectedLanguage= "+ (this.$store.state as State).selectedLang);
+  console.log("in page selectedLanguage= "+ (this.$store.state as State).selectedLang);
    	return (this.$store.state as State).selectedLang;
   }
 
   set selectedLanguage(value: string) {
-  console.log("set lang");
+  console.log("in page set lang");
     this.$storage.set("Language", value);
     this.$store.commit(UPDATE_SELECTED_LANG, value);
   }

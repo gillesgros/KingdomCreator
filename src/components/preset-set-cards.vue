@@ -50,8 +50,8 @@ interface genericCardTypes {
 }
 
 const OTHER_CARD_TYPES: genericCardTypes[] = [
- {cardType: "Knights", title: "Supply Cards - Knights" }, /* dark Ages */
- {cardType: "Castles", title: "Supply Cards - Castles" }, /* empires */
+ {cardType: "Knight", title: "Supply Cards - Knights" }, /* dark Ages */
+ {cardType: "Castle", title: "Supply Cards - Castles" }, /* empires */
  {cardType: "Basic Cards Treasure", title: "Basic Cards"},
  {cardType: "Basic Cards Victory", title: "Basic Cards"},
  {cardType: "Basic Cards", title: "Basic Cards"},
@@ -62,7 +62,7 @@ const OTHER_CARD_TYPES: genericCardTypes[] = [
  {cardType: "Travellers Page", title: "Supply Cards - Travellers - Page Progression" }, /* adventures */
  {cardType: "Travellers Peasant", title: "Supply Cards - Travellers - Peasant Progression" }, /* adventures */
  {cardType: "Prize", title: "Non-Supply Cards"},
- {cardType: "Heirlooms", title: "Non-Supply Cards - Heirlooms" }, /*nocturne */
+ {cardType: "Heirloom", title: "Non-Supply Cards - Heirlooms" }, /*nocturne */
  ];
  
 const OTHER_CARD_TYPES_HORIZONTAL: genericCardTypes[] = [

@@ -49,6 +49,7 @@ export default class Randomizer extends Vue {
   }
 
   handleRandomize() {
+    console.log("randomizer - in handleRandomize")
     this.$store.dispatch(RANDOMIZE);
   }
 }
