@@ -19,10 +19,9 @@ new Vue({
   <div>
   <page-component :subtitle="subtitle" :selectedType="selectedType">
        <card-online-page-component v-if="true"/>
-       <card-online-page-othercard-component v-if="false"/>
+       <card-online-page-othercard-component v-if="true"/>
 	   <card-online-page-landscape-component v-if="true"/>
   </page-component>
-
   </div>
   `,
   store: store,

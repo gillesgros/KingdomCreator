@@ -1,6 +1,7 @@
 import { DigitalCard } from "./digital-cards-type"
 
-export const Cards_list_Hinterlands:DigitalCard[]= [		
+export const Cards_list_Hinterlands:DigitalCard[]= [
+
 /* Hinterlands */  	{	id: "bordervillage",  frenchName: "Village frontalier",  artwork: "http://wiki.dominionstrategy.com/images/2/2b/Border_VillageArt.jpg",
     		text_html: '<div class="card-text" style="top:29px;"><div style="position:relative; top:0px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:28px;">+2 Actions</div></div><br></div></div></div><div class="horizontal-line" style="width:200px; height:3px;margin-top:10px;"></div><div style="position:relative; top:5px;"><div style="line-height:21px;"><div style="display:inline;"><div style="display:inline; font-size:21px;">Quand vous recevez cette carte,</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">recevez une carte moins chère.</div></div><br></div></div></div>'
     	},	
@@ -79,5 +80,6 @@ export const Cards_list_Hinterlands:DigitalCard[]= [
     	{	id: "jackofalltrades",  frenchName: "Touche-à-tout",  artwork: "http://wiki.dominionstrategy.com/images/a/ae/Jack_of_all_TradesArt.jpg",
     		text_html: '<div class="card-text" style="top:5px;"><div style="position:relative; top:0px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Recevez un Argent.</div></div><br></div><div style="position:relative; top:2px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Consultez la carte du haut de votre</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">pioche; vous pouvez la défausser.</div></div><br></div></div><div style="position:relative; top:4px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Piochez jusqu\'à avoir 5 cartes</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">en main.</div></div><br></div></div><div style="position:relative; top:6px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Vous pouvez écarter une carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">non-Trésor de votre main.</div></div><br></div></div></div>'
     	},	
+
 
 ];

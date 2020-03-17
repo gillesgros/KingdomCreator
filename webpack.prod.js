@@ -12,7 +12,7 @@ module.exports = merge(common(true), {
   },
   plugins: [
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ["*", "!favicon.ico", "!CNAME", "!rules", "!img", "!ads.txt"]
+      cleanOnceBeforeBuildPatterns: ["*", "!favicon.ico", "!CNAME", "!rules", "!rules.fr", "!img", "!ads.txt"]
     }),
   ]
 });

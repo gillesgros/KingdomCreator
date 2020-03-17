@@ -1,6 +1,7 @@
 import { DigitalCard } from "./digital-cards-type"
 
-export const Cards_list_Intrigue:DigitalCard[]= [		
+export const Cards_list_Intrigue:DigitalCard[]= [
+
 /* Intrigue */  	{	id: "nobles",  frenchName: "Nobles",  artwork: "http://wiki.dominionstrategy.com/images/9/98/NoblesArt.jpg",
     		text_html: '<div class="card-text" style="top:47px;"><div style="position:relative; top:-20px;"><div style="line-height:20px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Choisissez : <div style="display: inline; font-weight: bold;">+3 Cartes</div> ou</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;"><div style="display: inline; font-weight: bold;">+2 Actions</div>.</div></div><br></div></div><div style="position:relative; top:0px;"><div style="display:inline;"><div style="position: relative; left:0px;"><div class="card-text-vp-icon-container" style="display:inline; transform:scale(0.55); top:10px;left:130px;"><div class="card-text-vp-text-container"><div class="card-text-vp-text" style="top:8px;">2</div></div><div class="card-text-vp-icon"></div></div></div></div><br></div><div class="horizontal-line" style="width:200px; height:3px;margin-top:-35px;"></div></div>'
     	},	
@@ -76,8 +77,11 @@ export const Cards_list_Intrigue:DigitalCard[]= [
     	{	id: "shantytown",  frenchName: "Taudis",  artwork: "http://wiki.dominionstrategy.com/images/3/36/Shanty_TownArt.jpg",
     		text_html: '<div class="card-text" style="top:29px;"><div style="position:relative; top:-15px;"><div style="font-weight: bold;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+2 Actions</div></div><br></div></div><div style="position:relative; top:5px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:19px;">Dévoilez votre main.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">Si vous n\'avez aucune carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">Action en main, <div style="display: inline; font-weight: bold;">+2 Cartes</div>.</div></div><br></div></div></div>'
     	},	
+
+
 ];
 export const Cards_list_Intrigue2:DigitalCard[]= [		
+
 /* Intrigue2 */  	{	id: "lurker",  frenchName: "Rôdeur",  artwork: "http://wiki.dominionstrategy.com/images/7/78/LurkerArt.jpg",
     		text_html: '<div class="card-text" style="top:29px;"><div style="position:relative; top:-5px;"><div style="font-weight: bold;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Action</div></div><br></div></div><div style="position:relative; top:10px;"><div style="line-height:20px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Choisissez : Écartez une carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">Action de la réserve ; ou recevez</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">une carte Action du rebut.</div></div><br></div></div></div>'
     	},	
@@ -99,4 +103,6 @@ export const Cards_list_Intrigue2:DigitalCard[]= [
     	{	id: "replace",  frenchName: "Remplacement",  artwork: "http://wiki.dominionstrategy.com/images/7/74/ReplaceArt.jpg",
     		text_html: '<div class="card-text" style="top:5px;"><div style="position:relative; top:10px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:19px;">Écartez une carte de votre main.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">Recevez une carte coûtant jusqu\'à</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">      de plus. Si la carte reçue est une</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">Action ou un Trésor, placez-la sur</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">votre pioche; si c\'est une carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">Victoire, tous vos adversaires</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">reçoivent une Malédiction.</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.18); top:58px; display: inline;left:8px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">2</div></div></div></div>'
     	},	
+
+
 ];

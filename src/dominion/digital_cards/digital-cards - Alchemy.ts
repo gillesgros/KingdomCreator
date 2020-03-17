@@ -1,6 +1,7 @@
 import { DigitalCard } from "./digital-cards-type"
 
 export const Cards_list_Alchemy:DigitalCard[]= [		
+
 /* Alchemy */  	{	id: "alchemist",  frenchName: "Alchimiste",  artwork: "http://wiki.dominionstrategy.com/images/9/93/AlchemistArt.jpg",
     		text_html: '<div class="card-text" style="top:10px;"><div style="position:relative; top:0px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+2 Cartes</div></div><br><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Action</div></div><br></div></div></div><div style="position:relative; top:10px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:19px;">Quand vous défaussez cette carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">de votre zone de jeu, si vous avez</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">une Potion en jeu, vous pouvez</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">placer cette carte sur votre pioche.</div></div><br></div></div><div class="horizontal-line" style="width:200px; height:3px;margin-top:-92px;"></div></div>'
     	},	
@@ -37,4 +38,6 @@ export const Cards_list_Alchemy:DigitalCard[]= [
     	{	id: "vineyard",  frenchName: "Vignoble",  artwork: "http://wiki.dominionstrategy.com/images/c/c9/VineyardArt.jpg",
     		text_html: '<div class="card-text" style="top:47px;"><div style="position:relative; top:10px;"><div style="line-height:23px;"><div style="display:inline;"><div style="display:inline; font-size:23px;">Vaut        pour chaque lot de</div></div><br><div style="display:inline;"><div style="display:inline; font-size:23px;">3 cartes Action que vous avez</div></div><br><div style="display:inline;"><div style="display:inline; font-size:23px;">(arrondi inférieurement).</div></div><br></div></div><div class="card-text-vp-icon-container" style="display:inline; transform:scale(0.21); top:11px;left:73px;"><div class="card-text-vp-text-container"><div class="card-text-vp-text" style="top:8px;">1</div></div><div class="card-text-vp-icon"></div></div></div>'
     	},	
+
+
 ];

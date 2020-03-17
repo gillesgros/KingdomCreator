@@ -1,6 +1,7 @@
 import { DigitalCard } from "./digital-cards-type"
 
-export const Cards_list_Seaside:DigitalCard[]= [		
+export const Cards_list_Seaside:DigitalCard[]= [
+
 /* Seaside */  	{	id: "ghostship",  frenchName: "Vaisseau fantôme",  artwork: "http://wiki.dominionstrategy.com/images/5/5e/Ghost_ShipArt.jpg",
     		text_html: '<div class="card-text" style="top:10px;"><div style="position:relative; top:0px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+2 Cartes</div></div><br></div></div></div><div style="position:relative; top:10px;"><div style="line-height:21px;"><div style="display:inline;"><div style="display:inline; font-size:21px;">Tous vos adversaires ayant au</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">moins 4 cartes en main placent</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">des cartes de leur main sur leur</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">pioche jusqu\'à avoir 3 cartes</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;">en main.</div></div><br></div></div></div>'
     	},	
@@ -79,4 +80,6 @@ export const Cards_list_Seaside:DigitalCard[]= [
     	{	id: "outpost",  frenchName: "Avant-poste",  artwork: "http://wiki.dominionstrategy.com/images/5/54/OutpostArt.jpg",
     		text_html: '<div class="card-text" style="top:10px;"><div style="position:relative; top:10px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:19px;">Si c\'est la première fois que vous</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">jouez un Avant-poste ce tour-ci, et</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">si le tour précédent n\'était pas le</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">vôtre, jouez un tour supplémentaire</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">après celui-ci, et ne piochez que</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">3 cartes pour votre prochaine main.</div></div><br></div></div></div>'
     	},	
+
+
 ];

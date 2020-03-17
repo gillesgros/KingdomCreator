@@ -38,6 +38,8 @@ export const Cards_list_nocturne:DigitalCard[]= [
   /* landscape */	{	id: "thewindsgift",  frenchName: "Don du vent",  artwork: "http://wiki.dominionstrategy.com/images/f/f4/The_Wind%27s_GiftArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="font-weight: bold;"><div style="display:inline;"><div style="display:inline; font-size:26px;">+2 Cartes</div></div><br></div><div style="display:inline;"><div style="display:inline; font-size:26px;">Défaussez 2 cartes.</div></div><br></div>'
   /* landscape */	},	
+
+
   /* landscape */	{	id: "badomens",  frenchName: "Mauvais augure",  artwork: "http://wiki.dominionstrategy.com/images/1/1b/Bad_OmensArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="line-height:18px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Placez votre pioche dans votre défausse. Consultez-la</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">et placez en 2 Cuivres sur votre pioche (ou dévoilez</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;"> votre défausse pour prouver que c\'est impossible).</div></div><br></div></div>'
   /* landscape */	},	
@@ -89,4 +91,5 @@ export const Cards_list_nocturne:DigitalCard[]= [
   /* landscape */	{	id: "lostinthewoods",  frenchName: "Perdu dans les bois",  artwork: "http://wiki.dominionstrategy.com/images/f/fb/Lost_in_the_WoodsArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">Au début de votre tour, vous pouvez</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">défausser une carte pour appliquer une Aubaine.</div></div><br></div>'
   /* landscape */	},	
-  /* landscape */];		
+
+];		

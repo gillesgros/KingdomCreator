@@ -1,6 +1,7 @@
 import { DigitalCard } from "./digital-cards-type"
 
 export const Cards_list_Baseset:DigitalCard[]= [		
+
 /* Baseset */  	{	id: "adventurer",  frenchName: "Aventurier",  artwork: "http://wiki.dominionstrategy.com/images/7/76/AdventurerArt.jpg",
     		text_html: '<div class="card-text" style="top:20px;"><div style="position:relative; top:15px;"><div style="line-height:18px;"><div style="display:inline;"><div style="display:inline; font-size:18px;">Dévoilez des cartes de votre deck</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">jusqu\'à ce que 2 cartes <b><i>Trésor</i></b> soient</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">dévoilées. Ajoutez ces cartes <b><i>Trésor</i></b> à</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">votre main et défausser les autres</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">cartes dévoilées.</div></div><br></div></div></div>'
     	},	
@@ -79,8 +80,12 @@ export const Cards_list_Baseset:DigitalCard[]= [
     	{	id: "artisan",  frenchName: "Artisan",  artwork: "http://wiki.dominionstrategy.com/images/0/08/ArtisanArt.jpg",
     		text_html: '<div class="card-text" style="top:47px;"><div style="position:relative; top:5px;"><div style="line-height:19px;"><div style="display:inline;"><div style="display:inline; font-size:19px;">Recevez en main une carte coûtant</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">jusqu\'à      . Placez une carte de</div></div><br><div style="display:inline;"><div style="display:inline; font-size:19px;">votre main sur votre pioche.</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.19); top:30px; display: inline;left:82px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">5</div></div></div></div>'
     	},	
+
 ];
+
+
 export const Cards_list_Baseset2:DigitalCard[]= [
+
 /* Baset 2 */  	{	id: "merchant",  frenchName: "Marchand",  artwork: "http://wiki.dominionstrategy.com/images/d/d3/MerchantArt.jpg",
     		text_html: '<div class="card-text" style="top:29px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Action</div></div><br></div></div><div style="position:relative; top:10px;"><div style="line-height:20px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">La première fois que vous jouez</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;"> un Argent ce tour-ci, +      .</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.2); top:92px; display: inline;left:222px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div></div>'
     	},	
@@ -99,4 +104,5 @@ export const Cards_list_Baseset2:DigitalCard[]= [
     	{	id: "sentry",  frenchName: "Sentinelle",  artwork: "http://wiki.dominionstrategy.com/images/b/bd/SentryArt.jpg",
     		text_html: '<div class="card-text" style="top:5px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Action</div></div><br></div></div><div style="position:relative; top:0px;"><div style="line-height:18px;"><div style="display:inline;"><div style="display:inline; font-size:18px;">Consultez les 2 premières cartes</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">de votre pioche. Écartez-en et/ou</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">défaussez-en autant que vous le</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">voulez. Replacez le reste sur votre</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">pioche dans l\'ordre de votre choix.</div></div><br></div></div></div>'
     	},	
+
 ];

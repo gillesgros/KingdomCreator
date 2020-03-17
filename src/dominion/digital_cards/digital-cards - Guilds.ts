@@ -1,6 +1,7 @@
 import { DigitalCard } from "./digital-cards-type"
 
 export const Cards_list_Guilds:DigitalCard[]= [		
+
 /* Guild */  	{	id: "advisor",  frenchName: "Conseiller",  artwork: "http://wiki.dominionstrategy.com/images/c/c8/AdvisorArt.jpg",
     		text_html: '<div class="card-text" style="top:10px;"><div style="font-weight: bold;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+1 Action</div></div><br></div><div style="position:relative; top:5px;"><div style="line-height:20px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Dévoilez les 3 première cartes</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">de votre pioche. Le joueur à votre</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">gauche en choisit une.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">Défaussez-la et prenez en main</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">le reste.</div></div><br></div></div></div>'
     	},	
@@ -40,6 +41,5 @@ export const Cards_list_Guilds:DigitalCard[]= [
     	{	id: "taxman",  frenchName: "Percepteur",  artwork: "http://wiki.dominionstrategy.com/images/8/85/TaxmanArt.jpg",
     		text_html: '<div class="card-text" style="top:5px;"><div style="position:relative; top:5px;"><div style="line-height:18px;"><div style="display:inline;"><div style="display:inline; font-size:18px;">Vous pouvez écarter une carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">Trésor de votre main. Tous vos</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">adversaires ayant au moins 5 cartes</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">en main en défaussent un exemplaire</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">(à défaut, dévoilent leur main).</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">Recevez sur votre pioche une carte</div></div><br><div style="display:inline;"><div style="display:inline; font-size:18px;">Trésor coûtant jusqu\'à       de plus.</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.19); top:136px; display: inline;left:180px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">3</div></div></div></div>'
     	},	
-
 
 ];

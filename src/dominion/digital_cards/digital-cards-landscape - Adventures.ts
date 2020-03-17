@@ -1,7 +1,7 @@
 import { DigitalCard } from "./digital-cards-type"
 
 export const Cards_list_adventures:DigitalCard[]= [
-  
+
   /* landscape */	{	id: "alms",  frenchName: "Aumône",  artwork: "http://wiki.dominionstrategy.com/images/a/ab/AlmsArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="line-height:26px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">Une fois par tour: si vous n\'avez pas de carte Trésor</div></div><br><div style="display:inline;"><div style="display:inline; font-size:20px;">en jeu, recevez une carte coûtant jusqu\'à      .</div></div><br></div><div class="card-text-coin-icon" style="transform:scale(0.2); top:33px; display: inline;left:370px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">4</div></div></div></div>'
   /* landscape */	},	
@@ -62,5 +62,5 @@ export const Cards_list_adventures:DigitalCard[]= [
   /* landscape */	{	id: "training",  frenchName: "Entraînement",  artwork: "http://wiki.dominionstrategy.com/images/3/34/TrainingArt.jpg",
   /* landscape */		text_html: '<div class="landscape-text" style="top:0px;"><div style="position:relative; top:8px;"><div style="line-height:16px;"><div style="display:inline;"><div style="display:inline; font-size:16px;">Placez votre jeton +      sur une pile de cartes Action de la réserve.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:16px;">(Quand vous jouez une carte de cette pile, obtenez d\'abord +      .)</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.16); top:10px; display: inline;left:137px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div><div class="card-text-coin-icon" style="transform:scale(0.16); top:30px; display: inline;left:397px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div></div>'
   /* landscape */	},	
-  /* landscape */];		
-  
+
+];

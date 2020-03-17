@@ -366,11 +366,10 @@ export default class CardOnlinePageComponent extends Vue {
                                                    return {top: 16, fontsize: 1.8}; /* >= 6 Banque */
       if ((currentCard.frenchName).length >=18 ) { return {top: 21, fontsize: 1.08}; } /* 18 */
       if ((currentCard.frenchName).length >=16 ) { return {top: 20, fontsize: 1.16}; } /* 16 */
-	  
     }
-    if ((currentCard.frenchName).length >= 25 ) { return {top: 20, fontsize: 1.1}; }
-    if ((currentCard.frenchName).length >= 17 ) { return {top: 19, fontsize: 1.2}; }
-    if ((currentCard.frenchName).length >= 15 ) { return {top: 17, fontsize: 1.4}; } /* 22 */
+    if ((currentCard.frenchName).length >= 25 ) { return {top: 20, fontsize: 1.1}; } 
+    if ((currentCard.frenchName).length >= 22 ) { return {top: 19, fontsize: 1.2}; } /* 24 */
+    if ((currentCard.frenchName).length >= 15 ) { return {top: 17, fontsize: 1.4}; } /* 21 */
     if ((currentCard.frenchName).length >= 13 ) { return {top: 16, fontsize: 1.6}; } /* 14 */
                                                   return {top: 16, fontsize: 1.8};  /* >= 12 */
   } 
